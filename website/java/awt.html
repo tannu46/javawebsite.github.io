@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+</head>
+<style>
+   
+h1{
+       text-align: center;
+       font-weight: lighter;
+       font-size: 60px;
+       color: white;
+       margin: 0;
+       padding-left: 10px;
+           }
+           p{
+               padding-left: 5px;
+               font-size: 30px;
+               font-weight: lighter;
+               color: white;
+               margin: 0;
+       
+           }
+          
+           b{
+               font-weight: lighter;
+               font-size: 25px;
+               color:white;
+               margin: 0;
+               padding-left: 10px;
+           }
+           *{
+   
+      margin: 0;
+     
+      padding: 0;
+     
+      box-sizing: border-box;
+     
+     }
+     
+     
+     
+     .dropdown{
+     
+         margin: 0 auto;
+         background: rgb(17,16,16);
+background: radial-gradient(circle, rgba(17,16,16,1) 7%, rgba(11,113,232,1) 100%);
+         background-position: center center;
+         -webkit-background-size: cover ;
+         background-size: cover;
+         background-attachment: fixed;
+         
+         /* position: fixed; */
+     
+     }
+     
+     nav{
+     
+         height: 65px;
+     
+         background-color:#0a9395 ;
+     
+         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+         text-align:justify;
+         font-size: 30px;
+        
+     }
+     
+     .logo{
+      width: 4rem;
+      float: left;
+      margin-top:2em ;
+      clip-path: circle(45.4% at 50% 50%);
+        
+         width: 70px;
+     
+         display: inline;
+     
+         margin-top: -5px;
+     
+         margin-left: 10px;
+        
+     }
+     
+     nav ul{
+     
+         padding: 0;
+     
+         margin: 0;
+     
+         float: right;
+     
+         margin-right: 25px;
+     
+     }
+     
+     nav ul li{
+      background:#0a9395  ;
+         
+     
+         position: relative;
+     
+         list-style: none;
+     
+         display: inline-block;
+     
+     }
+     
+     nav ul li a{
+     
+         display: flex;
+     
+         padding: 0 15px;
+     
+         color:black;
+     
+         text-decoration: none;
+     
+         line-height: 65px;
+     
+         font-size: 25px;
+     
+         justify-content: space-between;
+     
+         align-items: center;
+     
+         text-align: center;
+     
+     }
+     
+     nav ul li a:hover{
+     
+         background:#0c5454;
+     
+     }
+     
+     nav ul ul{
+     
+         position: absolute;
+     
+         top: 60px;
+     
+         display: none;
+     
+     }
+     
+     nav ul li:hover > ul{
+     
+         display: block;
+     
+     }
+     
+     nav ul ul li{
+     
+         width:150px;
+     
+         float: none;
+     
+         display: list-item;
+     
+         position: relative;
+     
+     }
+     p {
+        margin-top: 50px;
+        text-align: center;
+        font: size 30px;
+        color: yellow
+     }
+        pre
+         {
+            background-color: beige;
+            color: #000000;
+            font-size: 25px ;
+            margin: 250px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+          
+            border-radius: 25px;
+         }
+
+         .img-container {
+        text-align: center;
+        display: block;
+      }
+    
+    </style>
+    <body>
+    
+       <div class="dropdown">
+           <nav>
+               <img src="../images/main0.jpg" class="logo"><a>ASCODERS</a>
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                   <li><a href="#">Tutorial</a>
+                       <ul>
+                           <li><a href="../HTML.html">HTML</a></li>
+                           <li><a href="../CSS.html">CSS</a></li>
+                           <li><a href="../Java Script.html">Java Script</a></li>
+                            <li><a href="../dbms.html">DBMS</a></li>
+                           <li><a href="../sql.html">SQL</a></li>
+                           <li><a href="../plsql.html">PL/SQL</a></li>
+                           <li><a href="../java.html">JAVA</a></li>
+                           <li><a href="../php.html">PHP</a></li>
+                           
+                       </ul>
+                   </li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Contact Us</a></li>
+               </ul>
+           </nav><br>
+<h1>CORE JAVA PROGRAMMING: Practice Problems</h1>
+<p> QUESTION1: Create a simple AWT application that displays a button with FlowLayout manager.</p>
+ <pre>
+  PROGRAM:             
+  import java.awt.*;
+  import java.awt.event.*;
+  
+  class a
+  {
+      public static void main(String[] x) 
+      {
+          // Create a new frame.
+ Frame f = new Frame("AWT Button FlowLayout ");
+  
+          // Set the size of the frame.
+          f.setSize(300, 300);
+  
+          // Handle the window closing event.
+     f.addWindowListener(new WindowAdapter() {
+      public void windowClosing(WindowEvent e) {
+                  System.exit(0);
+              }
+          });
+  
+          // Create a button and add it to the frame.
+          Button b1= new Button("Click me!");
+          f.add(b1);
+  
+     // Create a label and add it to the frame.
+Label l1 = new Label("You have not clicked the button yet.");
+          f.add(l1);
+  
+ // Set the layout manager for the frame to FlowLayout.
+          f.setLayout(new FlowLayout());
+  
+          // Display the frame.
+          f.setVisible(true);
+      }
+  } 
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7039AWT1.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION2:Create a simple AWT application that displays a button with Custom Layout.
+
+</p>
+ <pre>
+  PROGRAM:             
+  import java.awt.*;
+  import java.awt.event.*;
+  
+  class a{
+      public static void main(String[] x) 
+      {
+          // Create a new frame.
+Frame f = new Frame("AWT Button custom Layout ");
+  
+ // Set the size of the frame.
+          f.setSize(300, 300);
+  
+         
+// Create a button and add it to the frame.
+          Button b1= new Button("Click me!");
+          
+// Set the layout manager for the frame tocustom layout.
+          b1.setBounds(150,100,60,60);
+          f.add(b1);
+  
+    // Create a label and add it to the frame.
+ Label l1 = new Label("Please click the button.");
+          f.add(l1);
+  
+        
+     // Display the frame.
+          f.setVisible(true);
+           // Handle the window closing event.
+    f.addWindowListener(new WindowAdapter() {
+   public void windowClosing(WindowEvent e) {
+                  System.exit(0);
+              }
+          });
+  
+      }
+  }    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7039AWT2.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION3:Create a simple AWT application that displays multiple buttons with BorderLayout manager (North, East, West, South, Center).</p>
+ <pre>
+    import java.awt.BorderLayout;
+    import java.awt.Button;
+    import java.awt.Frame;
+    
+    class AWTButtonExample {
+public static void main(String[] args) {
+    Frame frame = new Frame("AWT Button Example");
+    
+           
+     Button northButton = new Button("North");
+    Button eastButton = new Button("East");
+     Button westButton = new Button("West");
+    Button southButton = new Button("South");
+     Button centerButton = new Button("Center");
+    
+           
+     frame.add(northButton, BorderLayout.NORTH);
+     frame.add(eastButton, BorderLayout.EAST);
+     frame.add(westButton, BorderLayout.WEST);
+     frame.add(southButton, BorderLayout.SOUTH);
+     frame.add(centerButton, BorderLayout.CENTER);
+    
+            
+     frame.setSize(400, 300);
+     frame.setVisible(true);
+    
+           
+frame.addWindowListener(new java.awt.event.WindowAdapter() {
+ public void windowClosing(java.awt.event.WindowEvent
+  windowEvent) {
+                    System.exit(0);
+                }
+            });
+        }
+    }
+      PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/awt/7029awt3.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION4:Create a simple AWT application that displays a TextField with FlowLayout manager.</p>
+ <pre>
+  PROGRAM:             
+ 
+  class awt{
+ public static void main(String[] gfdsafgvsds){
+java.awt.Frame f = new java.awt.Frame();
+java.awt.TextField t = new java.awt.TextField("Vipin");
+          f.setSize(100,200);
+          f.setVisible(true);
+          f.add(t);
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7077Awt4.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION5:Create a simple AWT application that displays a TextField<br> with Custom Layout.</p>
+ <pre>
+  PROGRAM:             
+ 
+  class awt{
+public static void main(String[] gfdsafgvsds){
+java.awt.Frame f = new java.awt.Frame();
+ java.awt.TextField t = new java.awt.TextField("Vipin");
+          f.setLayout(null);
+          t.setBounds(30,100,150,30);
+          f.setSize(100,200);
+          f.setVisible(true);
+          f.add(t);
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7077Awt5.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION6:Create a simple AWT application that displays a Checkbox with FlowLayout manager.</p>
+ <pre>
+  PROGRAM:             
+  
+  class awt{
+public static void main(String[] gfdsafgvsds){
+ java.awt.Frame f = new java.awt.Frame();
+java.awt.Checkbox t = new java.awt.Checkbox("Vipin");
+         
+          f.setSize(100,200);
+          f.setVisible(true);
+          f.add(t);
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7077Awt6.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION7:Create a simple AWT application that displays a Checkbox <br>with Custom Layout.</p>
+ <pre>
+  PROGRAM:             
+  
+  class awt{
+public static void main(String[] gfdsafgvsds){
+ java.awt.Frame f = new java.awt.Frame();
+java.awt.Checkbox t = new java.awt.Checkbox("Vipin");
+         f.setLayout(null);
+         t.setBounds(30,100,150,30);
+          f.setSize(100,200);
+          f.setVisible(true);
+          f.add(t);
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7077Awt7.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION8: Create a simple AWT application that displays a Label with FlowLayout manager.
+
+</p>
+ <pre>
+  PROGRAM:             
+
+  class awt{
+public static void main(String[] gfdsafgvsds){
+ java.awt.Frame f = new java.awt.Frame();
+java.awt.Label t = new java.awt.Label("Vipin");
+    f.setSize(100,200);
+          f.setVisible(true);
+          f.add(t);
+      }
+  }    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7077Awt8.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION9:Create a simple AWT application that displays a Label with Custom Layout.</p>
+ <pre>
+    PROGRAM: 
+class awt{
+ public static void main(String[] gfdsafgvsds){
+  java.awt.Frame f = new java.awt.Frame();
+     java.awt.Label t = new java.awt.Label("Vipin");
+           f.setLayout(null);
+           t.setBounds(334,100,150,30);
+            f.setSize(100,200);
+            f.setVisible(true);
+            f.add(t);
+        }
+    }             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7077Awt9.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION10: Create a simple AWT application that displays a Choice with FlowLayout manager.
+
+</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION11: Create a simple AWT application that displays a Choice with Custom Layout.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION12:Create a simple AWT application that displays a CheckboxGroup with FlowLayout manager.</p>
+ <pre>
+  PROGRAM:             
+  import java.awt.*;
+  import java.awt.event.*;
+  class awtpro1
+  {
+      awtpro1()
+      {
+          Frame f= new Frame("checkbox Group");
+ Label l1= new Label("which is your favourite programming 
+ language?");
+    CheckboxGroup cg= new CheckboxGroup();
+Checkbox c1= new Checkbox("HTML",cg, false);
+Checkbox c2= new Checkbox("C",cg, false);
+ Checkbox c3= new Checkbox("C++",cg, false);
+Checkbox c4= new Checkbox("JAVA",cg, false);
+ f.setSize(700,400);
+ f.setLayout( new FlowLayout());
+ f.setVisible(true);
+          f.add(l1);
+          f.add(c1);
+          f.add(c2);
+          f.add(c3);
+          f.add(c4);
+   f.addWindowListener (new WindowAdapter() {    
+ public void windowClosing (WindowEvent e) {    
+                  System.exit(1);    
+              }    
+         });
+        }
+      public static void main(String st[])
+      {
+          new awtpro1();
+      }
+      
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7062AWT12.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION13: Create a simple AWT application that displays a CheckboxGroup with Custom Layout.</p>
+ <pre>
+  PROGRAM:             
+  import java.awt.*;
+  import java.awt.event.*;
+class CustomCheckboxLayoutExample extends Frame {
+      public CustomCheckboxLayoutExample() {
+ setTitle("CheckboxGroup with Custom Layout");
+    setSize(300, 200);
+    addWindowListener(new WindowAdapter() {
+   public void windowClosing(WindowEvent we) {
+                  System.exit(0);
+              }
+          });
+  
+          
+CheckboxPanel checkboxPanel = new CheckboxPanel();
+
+ CheckboxGroup checkboxGroup = new CheckboxGroup();
+  
+ Checkbox checkbox1 = new Checkbox("Option 1", 
+ checkboxGroup, false);
+ Checkbox checkbox2 = new Checkbox("Option 2", 
+ checkboxGroup, false);
+ Checkbox checkbox3 = new Checkbox("Option 3", 
+ checkboxGroup, false);
+  
+          checkboxPanel.addCheckbox(checkbox1);
+          checkboxPanel.addCheckbox(checkbox2);
+          checkboxPanel.addCheckbox(checkbox3);
+  
+          
+          add(checkboxPanel);
+      }
+  
+      public static void main(String[] args) {
+  CustomCheckboxLayoutExample example = new 
+  CustomCheckboxLayoutExample();
+          example.setVisible(true);
+      }
+  }
+  
+  class CheckboxPanel extends Panel {
+      private int checkboxCount;
+      private int padding = 10;
+  
+      public CheckboxPanel() {
+ setLayout(null); // Use a null layout for custom 
+ positioning
+      }
+  
+ public void addCheckbox(Checkbox checkbox) {
+          checkboxCount++;
+ checkbox.setBounds(padding, checkboxCount * 30, 100, 20);
+          add(checkbox);
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7085AWT13.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION14:Create a simple AWT application that displays a List with FlowLayout manager.</p>
+ <pre>
+    PROGRAM:  
+    import java.awt.*;
+    import java.awt.event.*;
+    
+    class Awt14 {
+        private Frame frame;
+        private List myList;
+    
+        public Awt14() {
+            frame = new Frame("AWT List Example");
+            myList = new List();
+    
+            // Add items to the List
+            myList.add("Item 1");
+            myList.add("Item 2");
+            myList.add("Item 3");
+            myList.add("Item 4");
+            myList.add("Item 5");
+    
+            // Set FlowLayout for the frame
+            frame.setLayout(new FlowLayout());
+    
+  // Add the List to the frame
+            frame.add(myList);
+    
+  // Add a WindowListener to handle closing the frame
+  frame.addWindowListener(new WindowAdapter() {
+public void windowClosing(WindowEvent windowEvent) {
+                    System.exit(0);
+                }
+            });
+    
+            // Set frame properties
+            frame.setSize(300, 200);
+            frame.setVisible(true);
+        }
+    
+        public static void main(String[] args) {
+            new Awt14();
+        }}
+                
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7070Awt14.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION15:Create a simple AWT application that displays a List with Custom Layout.
+
+</p>
+ <pre>
+  PROGRAM:             
+  import java.awt.Choice;
+  import java.awt.Frame;
+  class prog15{
+  public static void main(String args[]){
+  
+  Frame f=new Frame("Custom list app");
+   Choice choose =new Choice();
+  choose.add("Home");
+  choose.add("Office");
+  choose.add("Card");
+  choose.add("Tables");
+  choose.add("Hourse");
+  choose.add("Purse");
+  choose.add("All");
+  f.add(choose);
+  f.setSize(300,300);
+  f.setVisible(true);
+  }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/AWT7104prog15.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION16:Create a simple AWT application that displays a TextArea with FlowLayout manager.</p>
+ <pre>
+  PROGRAM:             
+  import java.awt.*;
+  import java.awt.event.*;
+  
+  class textarea extends Frame {
+      private TextArea textArea;
+  
+          textarea() {
+          setTitle("TextArea with FlowLayout");
+          setSize(400, 300);
+  
+ setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10)); 
+  
+          textArea = new TextArea(10, 30); 
+          add(textArea);
+  
+ addWindowListener(new WindowAdapter() {
+         public void windowClosing(WindowEvent we) {
+                  System.exit(0);
+              }
+          });
+      }
+  
+      public static void main(String[] args) {
+          textarea app = new textarea();
+          app.setVisible(true);
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7003awt16.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION17:Create a simple AWT application that displays a TextArea <br>with Custom Layout.
+
+</p>
+ <pre>
+  PROGRAM:             
+  import java.awt.*;
+  import java.awt.event.*;
+  
+  class CustomLayoutExample {
+      public static void main(String[] args) {
+          
+ Frame frame = new Frame("Custom Layout Example");
+  
+         
+ TextArea textArea = new TextArea("This is a TextArea 
+ with a custom layout.");
+  
+          
+    frame.setLayout(new GridBagLayout());
+ GridBagConstraints gbc = new GridBagConstraints();
+ gbc.insets = new Insets(10, 10, 10, 10); // Add some padding
+  
+          
+          gbc.gridx = 0;
+          gbc.gridy = 0;
+   gbc.fill = GridBagConstraints.BOTH;
+          gbc.weightx = 1.0;
+          gbc.weighty = 1.0;
+          frame.add(textArea, gbc);
+  
+          
+ frame.addWindowListener(new WindowAdapter() {
+     public void windowClosing(WindowEvent e) {
+                  System.exit(0);
+              }
+          });
+  
+         
+          frame.setSize(400, 300);
+          frame.setVisible(true);
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7085AWT17.png" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION18:Create a simple AWT application design a calculator that displays<br> buttons, TextField with GridLayout manager.</p>
+ <pre>
+  PROGRAM:             
+  /*
+18. Create a simple AWT application design a calculator 
+that displays buttons, TextField with GridLayout manager
+*/
+/*
+-	Calculator.java
+*/
+class Calculator extends java.awt.Frame
+/* implements java.awt.event.ActionListener */
+{
+  /*
+      ---------------
+      | constructor |
+      ---------------
+  */
+  Calculator()
+  {
+      setSize(400,500);
+      setResizable(false);
+      setLayout(null);
+
+      add(Calculator.myField());
+
+      Calculator.myButton(this,16);
+  }
+  /*
+      ====================================================
+      | myFont | get argument size and return Font
+      ====================================================
+  */
+  private static java.awt.Font myFont(int size)
+  {
+      return new java.awt.Font("Arial",0,size);
+  }
+  /*
+      ====================================================
+      | myField | private function return TextField
+      ====================================================
+  */
+  private static java.awt.TextField myField()
+  {
+ java.awt.TextField fld = new java.awt.TextField();
+
+      fld.setBounds(0,0,400,100);
+
+      fld.setEditable(true);
+
+      fld.setFont(Calculator.myFont(25));
+
+      fld.setForeground(java.awt.Color.BLACK);
+
+      fld.setBackground(java.awt.Color.WHITE);
+
+      return fld;
+  }
+  /*
+      ====================================================
+      | myButton | function arguments size or Frame
+      ====================================================
+  */
+private static void myButton(java.awt.Frame frame,int size)
+  {
+ java.awt.Button btn[] = new java.awt.Button[size];
+
+      int x = 0, y = 100;	// default coordinates
+
+      char btn_label = ' ';
+
+      for (int i = 0; i < size; i++)
+      {
+          btn[i] = new java.awt.Button();
+
+          if (i > 9)
+          {
+              switch(i)
+              {
+                  case 10 : btn_label = '+'; break;
+
+                  case 11 : btn_label = '-'; break;
+
+                  case 12 : btn_label = '*'; break;
+
+                  case 13 : btn_label = '/'; break;
+
+                  case 14 : btn_label = '%'; break;
+
+                  default : btn_label = '=';
+              }
+              btn[i].setLabel(""+btn_label+"");
+          }
+          else
+          {
+              btn[i].setLabel(""+i+"");
+          }
+
+          if (i != 0)
+          {
+              if ((i%4) == 0)
+              {
+                  x = 0;
+                  y += 100;
+              }
+              else
+              {
+                  x += 100;
+              }
+          }
+          btn[i].setBounds(x,y,100,100);
+
+          Calculator.buttonStyle(btn[i],25);
+
+          // btn[i].addActionListener(btn[i]);
+
+          frame.add(btn[i]);
+      }
+  }
+  /*
+      ====================================================
+      | buttonStyle | function get arugment size Button
+      ====================================================
+  */
+private static void buttonStyle(java.awt.Button btn, int size)
+  {
+      btn.setFont(Calculator.myFont(size));
+      btn.setForeground(java.awt.Color.GRAY);
+      btn.setBackground(java.awt.Color.WHITE);
+  }
+  /*
+      ===================================================
+      | buttonActionStyle | get argument size and Button
+      ===================================================
+  */
+private static void buttonActionStyle(java.awt.Button btn,
+ int size)
+  {
+      btn.setFont(Calculator.myFont(size));
+      btn.setForeground(java.awt.Color.BLACK);
+      btn.setBackground(java.awt.Color.WHITE);
+  }
+  /*
+      @Override : ActionListener
+public void actionPerformed(java.awt.event.ActionEvent element)
+  {
+      Calculator.buttonActionStyle(this,20);
+
+      System.out.println(" button "+this.getLabel());
+  }
+  */
+  /*
+      [ main function ]----------------------------------
+  */
+  public static void main(String args[])
+  {
+      System.out.println(" Calculator execute ... ");
+
+      new Calculator().setVisible(true);
+  }
+}
+// the end ---     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/AWT/7027AWT18.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+
+           
+
+
+  
+                
+  
+              
+            </body>
+            </html>
+           

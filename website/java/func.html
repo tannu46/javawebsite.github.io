@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+</head>
+<style>
+   
+h1{
+       text-align: center;
+       font-weight: lighter;
+       font-size: 60px;
+       color: white;
+       margin: 0;
+       padding-left: 10px;
+           }
+           p{
+               padding-left: 5px;
+               font-size: 30px;
+               font-weight: lighter;
+               color: white;
+               margin: 0;
+       
+           }
+          
+           b{
+               font-weight: lighter;
+               font-size: 25px;
+               color:white;
+               margin: 0;
+               padding-left: 10px;
+           }
+           *{
+   
+      margin: 0;
+     
+      padding: 0;
+     
+      box-sizing: border-box;
+     
+     }
+     
+     
+     
+     .dropdown{
+     
+         margin: 0 auto;
+         background: rgb(17,16,16);
+background: radial-gradient(circle, rgba(17,16,16,1) 7%, rgba(11,113,232,1) 100%);
+         background-position: center center;
+         -webkit-background-size: cover ;
+         background-size: cover;
+         background-attachment: fixed;
+         
+         /* position: fixed; */
+     
+     }
+     
+     nav{
+     
+         height: 65px;
+     
+         background-color:#0a9395 ;
+     
+         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+         text-align:justify;
+         font-size: 30px;
+        
+     }
+     
+     .logo{
+      width: 4rem;
+      float: left;
+      margin-top:2em ;
+      clip-path: circle(45.4% at 50% 50%);
+        
+         width: 70px;
+     
+         display: inline;
+     
+         margin-top: -5px;
+     
+         margin-left: 10px;
+        
+     }
+     
+     nav ul{
+     
+         padding: 0;
+     
+         margin: 0;
+     
+         float: right;
+     
+         margin-right: 25px;
+     
+     }
+     
+     nav ul li{
+      background:#0a9395  ;
+         
+     
+         position: relative;
+     
+         list-style: none;
+     
+         display: inline-block;
+     
+     }
+     
+     nav ul li a{
+     
+         display: flex;
+     
+         padding: 0 15px;
+     
+         color:black;
+     
+         text-decoration: none;
+     
+         line-height: 65px;
+     
+         font-size: 25px;
+     
+         justify-content: space-between;
+     
+         align-items: center;
+     
+         text-align: center;
+     
+     }
+     
+     nav ul li a:hover{
+     
+         background:#0c5454;
+     
+     }
+     
+     nav ul ul{
+     
+         position: absolute;
+     
+         top: 60px;
+     
+         display: none;
+     
+     }
+     
+     nav ul li:hover > ul{
+     
+         display: block;
+     
+     }
+     
+     nav ul ul li{
+     
+         width:150px;
+     
+         float: none;
+     
+         display: list-item;
+     
+         position: relative;
+     
+     }
+     p {
+        margin-top: 50px;
+        text-align: center;
+        font: size 30px;
+        color: yellow
+     }
+        pre
+         {
+            background-color: beige;
+            color: #000000;
+            font-size: 25px ;
+            margin: 250px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+          
+            border-radius: 25px;
+         }
+
+         .img-container {
+        text-align: center;
+        display: block;
+      }
+    
+    </style>
+    <body>
+    
+       <div class="dropdown">
+           <nav>
+               <img src="../images/main0.jpg" class="logo"><a>ASCODERS</a>
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                   <li><a href="#">Tutorial</a>
+                       <ul>
+                           <li><a href="../HTML.html">HTML</a></li>
+                           <li><a href="../CSS.html">CSS</a></li>
+                           <li><a href="../Java Script.html">Java Script</a></li>
+                            <li><a href="../dbms.html">DBMS</a></li>
+                           <li><a href="../sql.html">SQL</a></li>
+                           <li><a href="../plsql.html">PL/SQL</a></li>
+                           <li><a href="../java.html">JAVA</a></li>
+                           <li><a href="../php.html">PHP</a></li>
+                           
+                       </ul>
+                   </li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Contact Us</a></li>
+               </ul>
+           </nav><br>
+ <h1>CORE JAVA PROGRAMMING: Practice Problems</h1>
+ <p> QUESTION1: Write a Java method to find the smallest number among three numbers.
+
+ </p>
+ <pre>
+    PROGRAM:
+    class function1{
+  public static void main(String[] args) {
+            int num1 = 3;
+            int num2 = 17;
+            int num3 = 5;
+    
+int smallest = findSmallestNumber(num1, num2, num3);
+    
+ System.out.println("The smallest number is: " + smallest);
+        }
+    
+ public static int findSmallestNumber(int num1, int num2,
+  int num3) {
+            int smallest = num1;
+    
+            if (num2 < smallest) {
+                smallest = num2;
+            }
+    
+            if (num3 < smallest) {
+                smallest = num3;
+            }
+    
+            return smallest;
+        }
+    }               
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/function1_7024.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION2:Write a Java method to compute the average of three numbers.</p>
+ <pre>
+  PROGRAM:             
+
+  class AverageCalculator {
+static double computeAverage(double num1, double num2,
+ double num3) {
+       return (num1 + num2 + num3) / 3.0;
+   }
+
+ public static void main(String[] args) {
+       double number1 = 10.0;
+       double number2 = 5.0;
+       double number3 = 8.0;
+
+double average = computeAverage(number1, number2, number3);
+
+System.out.println("The average is: " + average);
+   }
+}
+    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/function2_7100.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION3:Write a Java method to display the middle character of a string. Note: a) If the length of the string is odd there will be two middle characters. b) If the length of the string is even there will be one middle character.</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+    class function3 {
+    public static void main(String[] args)
+      {
+          Scanner in = new Scanner(System.in);
+          System.out.print("Input a string: ");
+          String str = in.nextLine();
+ System.out.print("The middle character in the string: 
+ " + middle(str)+"\n");
+      }
+   public static String middle(String str)
+      {
+          int position;
+          int length;
+          if (str.length() % 2 == 0)
+          {
+              position = str.length() / 2 - 1;
+              length = 2;
+          }
+          else
+          {
+              position = str.length() / 2;
+              length = 1;
+          }
+     return str.substring(position, position + length);
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/function3_7019.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION4:Write a Java method to count all the words in a string.
+
+</p>
+ <pre>
+  PROGRAM:             
+  
+  class a
+  
+  {
+  
+  static int countWord(String s)
+  {
+  int t=1;
+  for(int i=0; i<s.length(); i++)
+  {
+  
+  if((s.charAt(i) == ' ') && (s.charAt(i+1) != ' '))
+  {
+  t++;
+  }
+  }
+  return t;
+  }
+  
+  public static void main(String args[])
+  {
+  
+System.out.println(countWord("Hello How are you"));
+  }
+  
+  }  <>  
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/functions4_7007.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION5: Write a Java method to compute the future investment <br>value at a given interest rate for a specified number of years.</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+  class FutureInvestment {
+  
+  public static void main(String[] args) {
+     Scanner in = new Scanner(System.in); 
+     System.out.print("Input the investment amount: ");
+      double investment = in.nextDouble();
+      System.out.print("Input the rate of interest: ");
+     double rate = in.nextDouble();
+     System.out.print("Input number of years: ");
+     int year = in.nextInt();
+     
+     rate *= 0.01;
+     
+     System.out.println("Years    FutureValue");
+     for(int i = 1; i <= year; i++) {
+         int formatter = 19;
+         if (i >= 10) formatter = 18;
+ System.out.printf(i + "%"+formatter+".2f\n",
+  futureInvestmentValue(investment, rate/12, i));
+        }
+      }
+  
+ public static double futureInvestmentValue(double
+  investmentAmount, double monthlyInterestRate, int years) {
+
+return investmentAmount * Math.pow(1 + monthlyInterestRate, 
+years * 12);
+     }
+ }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/Function5_7057.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION6: Write a Java method to print characters between two characters<br> (i.e. A to P).
+
+</p>
+ <pre>
+  PROGRAM:             
+  class CharacterPrinter {
+static void printCharactersBetween(char startChar,
+ char endChar) {
+       if (startChar > endChar) {
+           char temp = startChar;
+           startChar = endChar;
+           endChar = temp;
+       }
+
+ for (char ch = startChar; ch < endChar; ch++) {
+           System.out.print(ch + " ");
+       }
+       System.out.println(endChar); 
+   }
+
+   public static void main(String[] args) {
+       char startChar = 'A';
+       char endChar = 'F';
+
+ System.out.println("Characters between " + startChar 
+ + " and " + endChar + ":");
+       printCharactersBetween(startChar, endChar);
+   }
+}
+    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/Functions6_7100.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION7: Write a Java method to check whether a string is a valid password.</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+  class Password {
+     
+ public static final int PASSWORD_LENGTH = 8;
+ 
+ public static void main(String[] args) {
+ 
+         Scanner input = new Scanner(System.in);
+         System.out.print(
+ "1. A password must have at least eight characters.\n" +
+ "2. A password consists of only letters and digits.\n" +
+ "3. A password must contain at least two digits \n" +
+  "Input a password (You are agreeing to the above Terms and 
+  Conditions.): ");
+         String s = input.nextLine();
+ 
+         if (is_Valid_Password(s)) {
+     System.out.println("Password is valid: " + s);
+         } else {
+      System.out.println("Not a valid password: " + s);
+         }
+ 
+     }
+public static boolean is_Valid_Password(String password) 
+{
+ 
+ if (password.length() < PASSWORD_LENGTH) return false;
+ 
+         int charCount = 0;
+         int numCount = 0;
+         for (int i = 0; i < password.length(); i++) {
+ 
+             char ch = password.charAt(i);
+ 
+             if (is_Numeric(ch)) numCount++;
+             else if (is_Letter(ch)) charCount++;
+             else return false;
+         }
+ 
+ 
+         return (charCount >= 2 && numCount >= 2);
+     }
+ 
+     public static boolean is_Letter(char ch) {
+         ch = Character.toUpperCase(ch);
+         return (ch >= 'A' && ch <= 'Z');
+     }
+ 
+ 
+     public static boolean is_Numeric(char ch) {
+ 
+         return (ch >= '0' && ch <= '9');
+     }
+ 
+ }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/7102function7.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION8: Write a Java method to display the current date and time.
+
+</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Date;
+  class Test
+  {
+static void apnaTimeAgya(Boolean check)
+      {
+          if (check)
+          {
+              Date d = new Date();
+  
+System.out.println(" hero time "+d);
+          }
+          else
+          {
+ System.out.println("ja me nahi btata");
+          }
+      }
+public static void main(String args[])
+      {
+          Test t = new Test();
+          
+          t.apnaTimeAgya(false);
+          t.apnaTimeAgya(true);
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/7077Function8.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION9:Write a Java method to find all twin prime numbers less than 100.
+
+</p>
+ <pre>
+  PROGRAM:             
+  class Function9 {
+    public static void main(String[] args) {
+        findTwinPrimes(100);
+    }
+
+    
+    private static boolean isPrime(int num) {
+        if (num < 2) {
+            return false;
+        }
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    
+private static void findTwinPrimes(int limit) {
+System.out.println("Twin Prime Numbers less than "
+ + limit + ":");
+        for (int i = 3; i < limit; i++) {
+            if (isPrime(i) && isPrime(i + 2)) {
+System.out.println("(" + i + ", " + (i + 2) + ")");
+            }
+        }
+    }
+}
+    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/7025function9.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION10: Write a Java method to count the number of digits in an integer with the value 2. The integer may be assumed to be non-negative.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION11:Write a Java method that accepts three integers and checks whether<br> they are consecutive or not. Returns true or false.</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+  class check_consecutive { 
+  public static void main(String s[] )
+     {
+         Scanner in = new Scanner(System.in);
+         System.out.print("Input the first number: ");
+         int x = in.nextInt();
+         System.out.print("Input the second number: ");
+         int y = in.nextInt();
+         System.out.print("Input the third number: ");
+ int z = in.nextInt();
+System.out.print("The three given numbers are consecutive
+(true or false) : ") ;
+ System.out.println(test(x,y,z));
+         }
+ 
+  public static boolean test(int x, int y, int z){
+     int max_num = Math.max(x, Math.max(y, z));
+     int min_num = Math.min(x, Math.min(y, z));
+     int middle_num = x+y+z - max_num - min_num;
+     return (max_num - middle_num) == 1 && (middle_num
+      - min_num == 1);
+   }
+ }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/7083Functions11.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION12: Write a Java method that accepts three integers and returns true if one is the middle point between the other two integers, otherwise false</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION13: Write a Java method that checks whether all the characters<br> in a given string are vowels (a, e,i,o,u) or not.<br> Return true if each character in the string is a vowel, <br>otherwise return false.</p>
+ <pre>
+  PROGRAM:             
+ 
+ class Test
+ {
+     static boolean isVowel(char c)
+     {
+         if (c == 'a')
+         {
+             return true;
+         }
+         else if (c == 'a')
+         {
+             return true;
+         }
+         else if (c == 'u')
+         {
+             return true;
+         }
+         else if (c == 'e')
+         {
+             return true;
+         }
+         else if (c == 'i')
+         {
+             return true;
+         }
+         else if (c == 'o')
+         {
+             return true;
+         }
+         else
+         {
+             return false;
+         }
+     }
+static boolean isStringInsideVowel(String line)
+     {
+ for (int i = 0; i < line.length(); i++)
+         {
+             if(isVowel(line.charAt(i)))
+             {
+                 return true;
+             }
+         }
+         return false;
+     }
+ 
+     public static void main(String args[])
+     {
+ 
+System.out.println(Test.isStringInsideVowel("hello"));
+System.out.println(Test.isStringInsideVowel("kmnpdk"));
+     }
+ }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Functions/7025function13.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+
+          
+              
+            </body>
+            </html>
+           

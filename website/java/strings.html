@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+</head>
+<style>
+   
+h1{
+       text-align: center;
+       font-weight: lighter;
+       font-size: 60px;
+       color: white;
+       margin: 0;
+       padding-left: 10px;
+           }
+           p{
+               padding-left: 5px;
+               font-size: 30px;
+               font-weight: lighter;
+               color: white;
+               margin: 0;
+       
+           }
+          
+           b{
+               font-weight: lighter;
+               font-size: 25px;
+               color:white;
+               margin: 0;
+               padding-left: 10px;
+           }
+           *{
+   
+      margin: 0;
+     
+      padding: 0;
+     
+      box-sizing: border-box;
+     
+     }
+     
+     
+     
+     .dropdown{
+     
+         margin: 0 auto;
+         background: rgb(17,16,16);
+background: radial-gradient(circle, rgba(17,16,16,1) 7%, rgba(11,113,232,1) 100%);
+         background-position: center center;
+         -webkit-background-size: cover ;
+         background-size: cover;
+         background-attachment: fixed;
+        
+         /* position: fixed; */
+     
+     }
+     
+     nav{
+     
+         height: 65px;
+     
+         background-color:#0a9395 ;
+     
+         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+         text-align:justify;
+         font-size: 30px;
+        
+     }
+     
+     .logo{
+      width: 4rem;
+      float: left;
+      margin-top:2em ;
+      clip-path: circle(45.4% at 50% 50%);
+        
+         width: 70px;
+     
+         display: inline;
+     
+         margin-top: -5px;
+     
+         margin-left: 10px;
+        
+     }
+     
+     nav ul{
+     
+         padding: 0;
+     
+         margin: 0;
+     
+         float: right;
+     
+         margin-right: 25px;
+     
+     }
+     
+     nav ul li{
+      background:#0a9395  ;
+         
+     
+         position: relative;
+     
+         list-style: none;
+     
+         display: inline-block;
+     
+     }
+     
+     nav ul li a{
+     
+         display: flex;
+     
+         padding: 0 15px;
+     
+         color:black;
+     
+         text-decoration: none;
+     
+         line-height: 65px;
+     
+         font-size: 25px;
+     
+         justify-content: space-between;
+     
+         align-items: center;
+     
+         text-align: center;
+     
+     }
+     
+     nav ul li a:hover{
+     
+         background:#0c5454;
+     
+     }
+     
+     nav ul ul{
+     
+         position: absolute;
+     
+         top: 60px;
+     
+         display: none;
+     
+     }
+     
+     nav ul li:hover > ul{
+     
+         display: block;
+     
+     }
+     
+     nav ul ul li{
+     
+         width:150px;
+     
+         float: none;
+     
+         display: list-item;
+     
+         position: relative;
+     
+     }
+     p {
+        margin-top: 50px;
+        text-align: center;
+        font: size 30px;
+        color: yellow
+     }
+        pre
+         {
+            background-color: beige;
+            color: #000000;
+            font-size: 25px ;
+            margin: 250px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+          
+            border-radius: 25px;
+         }
+
+         .img-container {
+        text-align: center;
+        display: block;
+      }
+    
+    </style>
+    <body>
+    
+       <div class="dropdown">
+           <nav>
+               <img src="../images/main0.jpg" class="logo"><a>ASCODERS</a>
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                   <li><a href="#">Tutorial</a>
+                       <ul>
+                           <li><a href="../HTML.html">HTML</a></li>
+                           <li><a href="../CSS.html">CSS</a></li>
+                           <li><a href="../Java Script.html">Java Script</a></li>
+                            <li><a href="../dbms.html">DBMS</a></li>
+                           <li><a href="../sql.html">SQL</a></li>
+                           <li><a href="../plsql.html">PL/SQL</a></li>
+                           <li><a href="../java.html">JAVA</a></li>
+                           <li><a href="../php.html">PHP</a></li>
+                           
+                       </ul>
+                   </li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Contact Us</a></li>
+               </ul>
+           </nav><br>
+<h1>CORE JAVA PROGRAMMING: Practice Problems</h1>
+<p> QUESTION1: Program to Check if a String contains only digits?</p>
+ <pre>
+  PROGRAM:             
+  // Java program for the above approach 
+  // contains only digits 
+  class string1 { 
+  
+    // Function to check if a string 
+    // contains only digits 
+    public static boolean
+    onlyDigits(String str, int n) 
+    { 
+      // Traverse the string from 
+      // start to end 
+      for (int i = 0; i < n; i++) { 
+  
+        // Check if character is 
+        // not a digit between 0-9 
+        // then return false
+        if (str.charAt(i) < '0'
+          || str.charAt(i) > '9') { 
+          return false; 
+        } 
+      } 
+      // If we reach here, that means 
+      // all characters were digits.
+      return true; 
+    } 
+  
+    // Driver Code 
+    public static void main(String args[]) 
+    { 
+      // Given string str 
+      String str = "1a234"; 
+      int len = str.length(); 
+  
+      // Function Call 
+      System.out.println(onlyDigits(str, len)); 
+    } 
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7017String1.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION2: Program to perform Deep Copy for String?</p>
+ <pre>
+  PROGRAM:             
+  class String2 
+  {  
+  // instance variable of the class ABC  
+  int x = 30;  
+  }  
+  class DeepCopyExample   
+  {     
+  // main method  
+  public static void main(String argvs[])   
+  {  
+  // creating an object of the class ABC  
+  
+  
+  String2 obj1 = new String2();  
+    
+  // it will copy the reference, not value  
+  String2 obj2 = new String2();  
+    
+  // updating the value to 6   
+  // using the reference variable obj2  
+  obj2.x = 6;  
+    
+  // printing the value of x using reference variable obj1   
+  System.out.println("The value of x is: " + obj1.x);  
+  }  
+  
+  }    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7017string2.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION3: Program to prove String is immutable programmatically?</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION4: Program to remove all occurrences of a given character from input String?</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+  class RemoveCharacter {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+          
+          System.out.print("Enter a string: ");
+          String inputString = scanner.nextLine();
+          
+          System.out.print("Enter the character to remove: ");
+          char charToRemove = scanner.next().charAt(0);
+          
+          String result = removeCharacter(inputString, charToRemove);
+          System.out.println("Result: " + result);
+          
+          scanner.close();
+      }
+      
+public static String removeCharacter(String inputString, 
+char charToRemove) {
+          StringBuilder stringBuilder = new StringBuilder();
+          
+          for (int i = 0; i < inputString.length(); i++) {
+              char currentChar = inputString.charAt(i);
+              
+              if (currentChar != charToRemove) {
+                  stringBuilder.append(currentChar);
+              }
+          }
+          
+          return stringBuilder.toString();
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7023Strings4.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION5:Program to append the string using StringBuffer class</p>
+ <pre>
+  PROGRAM:             
+  import java.lang.*; 
+  class s { 
+  
+    public static void main(String[] args) 
+    { 
+  
+      StringBuffer s1 = new StringBuffer("Yaman "); 
+      System.out.println("Input: " + s1); 
+  
+      s1.append(true); 
+      System.out.println("Output: " + s1); 
+  
+      System.out.println(); 
+  
+      StringBuffer s2 = new StringBuffer("Sahota"); 
+      System.out.println("Input: " + s2); 
+  
+      s2.append(false); 
+      System.out.println("Output: " + s2); 
+    } 
+  } 
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7038String5.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION6:Program to insert the string using StringBuffer class</p>
+ <pre>
+  PROGRAM:             
+  class Insert {
+    public static void main(String[] args) {
+        // Create a StringBuffer
+        StringBuffer stringBuffer = new StringBuffer("Hello World!");
+
+        // Insert a string at a specific position
+        stringBuffer.insert(6, "Java ");
+
+        // Print the modified string
+  System.out.println("Modified String: " + stringBuffer.toString());
+    }
+}
+    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7073_string6.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION7:Program to Add Characters to a String</p>
+ <pre>
+  PROGRAM:             
+  class Add{
+    public static void main(String[] args) {
+        // Using concat method
+        String originalString = "Hello";
+        String newString1 = originalString.concat(" World!");
+
+        // Using + operator
+        String newString2 = originalString + " Java!";
+
+        // Print the modified strings
+        System.out.println("Original String: " + originalString);
+        System.out.println("Modified String 1: " + newString1);
+        System.out.println("Modified String 2: " + newString2);
+    }
+}
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7073_string7.java" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION8: Program to Add Characters to a String</p>
+ <pre>
+  PROGRAM:             
+  // Program to Add Characters to a String
+
+  class AddCharactersToString {
+      public static void main(String[] args) {
+          // Create a StringBuilder
+          StringBuffer s = new StringBuffer("Hello, ");
+  
+          // Add characters to the string
+          s.append("World");
+  
+          // Print the final string
+          System.out.println(s.toString()); // Output: "Hello, World!"
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7055string8.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION9:Program to Check Anagram</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION10:Program to check whether a string is a Palindrome</p>
+ <pre>
+  PROGRAM:             
+  class PalindromeString10
+{    
+    public static void main(String[] args) {    
+        String string = "Kayak";    
+        boolean flag = true;    
+            
+        //Converts the given string into lowercase    
+        string = string.toLowerCase();    
+            
+        
+        for(int i = 0; i < string.length()/2; i++){    
+            if(string.charAt(i) != string.charAt(string.length()-i-1)){    
+                flag = false;    
+                break;    
+            }    
+        }    
+        if(flag)    
+            System.out.println("Given string is palindrome");    
+        else    
+            System.out.println("Given string is not a palindrome");    
+    }    
+}    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7017String10.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION11:Program to Convert Enum to String
+
+</p>
+ <pre>
+  PROGRAM:             
+  import java.io.*; 
+
+  
+  // Enum 
+  
+  enum Fruits { 
+  
+      Orange, 
+  
+      Apple, 
+  
+      Banana, 
+  
+      Mango; 
+  } 
+  
+    
+  // Main class 
+  
+  class GFG { 
+  
+    
+  
+      // Main driver method 
+  
+      public static void main(String[] args) { 
+  
+    
+  
+          // Printing all the values 
+  
+          System.out.println(Fruits.Orange.name()); 
+  
+          System.out.println(Fruits.Apple.name()); 
+  
+          System.out.println(Fruits.Banana.name()); 
+  
+          System.out.println(Fruits.Mango.name()); 
+  
+      } 
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7017String11.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION12: Program to Convert String to String Array</p>
+ <pre>
+  PROGRAM:             
+  // Program to Convert String to String Array
+  class StringToArray {
+      public static void main(String[] args) {
+   String inputString = "Hello, World! This is a sample string.";
+          String[] stringArray = inputString.split(" ");
+          
+          for (String word : stringArray) {
+              System.out.println(word);
+          }
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7055string12.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION13:Program to count number of words in a String?</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION14:Program to count the total number of characters in a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION15:Program to count the total number of punctuation characters exists in a String</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION16:Program to count the total number of vowels and consonants in a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION17:Program to determine whether a given string is palindrome</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION18: Program to determine whether one string is a rotation of another</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION19:Program to divide a string in 'N' equal parts.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION20:</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION21: Program to find all the permutations of a string</p>
+ <pre>
+  PROGRAM:             
+  //Program to find all the permutations of a string
+  class StringPermutations {
+      public static void main(String[] args) {
+          String inputString = "four";
+          findPermutations(inputString, "");
+      }
+  
+      public static void findPermutations(String input, String current) {
+          int length = input.length();
+  
+          // If the input string is empty, we've formed a permutation
+          if (length == 0) {
+              System.out.println(current);
+          } else {
+              for (int i = 0; i < length; i++) {
+                  char currentChar = input.charAt(i);
+                  String remaining = input.substring(0, i) + input.substring(i + 1);
+                  findPermutations(remaining, current + currentChar);
+              }
+          }
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7055string21.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION22: Program to find maximum and minimum occurring character in a string
+
+</p>
+ <pre>
+  PROGRAM:             
+  class CharacterFinder {
+    public static void main(String[] args) {
+        String input = "Hello World";
+        char maxChar = findMaxCharacter(input);
+        char minChar = findMinCharacter(input);
+        
+        System.out.println("Maximum character: " + maxChar);
+        System.out.println("Minimum character: " + minChar);
+    }
+    
+    public static char findMaxCharacter(String input) {
+        char maxChar = input.charAt(0);
+        
+        for (int i = 1; i < input.length(); i++) {
+            if (input.charAt(i) > maxChar) {
+                maxChar = input.charAt(i);
+            }
+        }
+        
+        return maxChar;
+    }
+    
+    public static char findMinCharacter(String input) {
+        char minChar = input.charAt(0);
+        
+        for (int i = 1; i < input.length(); i++) {
+            if (input.charAt(i) < minChar) {
+                minChar = input.charAt(i);
+            }
+        }
+        
+        return minChar;
+    }
+}     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7040Strings22.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION23: Program to find Reverse of the string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION24: Program to find the duplicate characters in a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION25:Program to find the duplicate words in a string</p>
+ <pre>
+  PROGRAM:             
+  // Program to find the duplicate words in a string
+  class FindDuplicateWords {
+      public static void main(String[] args) {
+          String inputString = "This is a sample string and this is a sample example.";
+          String[] words = inputString.split(" ");
+          int[] wordCount = new int[words.length];
+  
+          for (int i = 0; i < words.length; i++) {
+              words[i] = words[i].toLowerCase().replaceAll("[^a-zA-Z]", "");
+              if (!words[i].isEmpty()) {
+                  for (int j = i + 1; j < words.length; j++) {
+                      if (words[i].equals(words[j])) {
+                          wordCount[i]++;
+                      }
+                  }
+              }
+          }
+  
+          // Print duplicate words
+          for (int i = 0; i < words.length; i++) {
+              if (wordCount[i] > 0) {
+                  System.out.println("Word: " + words[i] + ", Count: " + (wordCount[i] + 1));
+                  wordCount[i] = 0; // Reset the count to avoid duplicate output
+              }
+          }
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7055string25.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION26:Program to find the frequency of characters</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION27: Program to find the largest and smallest word in a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION28: Program to find the longest repeating sequence in a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION29: Program to find the most repeated word in a text file</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION30: Program to find the number of the words in the given text file</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION31:Program to Get a Character From the Given String</p>
+ <pre>
+  PROGRAM:             
+
+
+  class A { 
+ 
+    public static char
+    getCharFromString(String str, int index) 
+    { 
+      return str.charAt(index); 
+    } 
+  
+    
+    public static void main(String[] args) 
+    { 
+      String str = "ABCDEFGH"; 
+  
+      
+      int index = 5; 
+      char ch = getCharFromString(str, index); 
+  
+      System.out.println("Character from " + str 
+              + " at index " + index 
+              + " is " + ch); 
+    } 
+  } 
+  
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7025String31.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION32:Program to Insert a string into another string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION33:Program to Iterate Over Characters in String</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION34:Program to Print a New Line in String</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION35: Program to Print even length words</p>
+ <pre>
+  PROGRAM:             
+  class EvenLength {  
+    public static void main(String str[] ) {  
+        String s = "This is the java even length word program ";  
+          
+        String[] words = s.split(" ");  
+          
+        for(String word : words) {  
+            if(word.length() % 2 == 0) {  
+                System.out.println(word);  
+            }  
+        }  
+    }  
+}       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7069string35.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION36:Program to print smallest and biggest possible palindrome word in a given string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION37:Program to remove all the white spaces from a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION38:Program to replace lower-case characters with upper-case and vice-versa</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+  class stringvv {
+      public static void main(String[] args) {
+          Scanner scanner = new Scanner(System.in);
+          System.out.print("Enter a string: ");
+          String input = scanner.nextLine();
+          String output = "";
+          for (int i = 0; i < input.length(); i++) {
+              char c = input.charAt(i);
+              if (Character.isLowerCase(c)) {
+                  output += Character.toUpperCase(c);
+              } else if (Character.isUpperCase(c)) {
+                  output += Character.toLowerCase(c);
+              } else {
+                  output += c;
+              }
+          }
+          System.out.println("Output: " + output);
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7031string38.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION39: Program to replace the spaces of a string with a specific character</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION40: Program to separate the Individual Characters from a String</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION41: Program to Splitting into a number of sub-strings</p>
+ <pre>
+  PROGRAM:             
+  class String41 {
+    public static void main(String[] args) {
+        String originalString = "vishnu";
+        int substringLength = 3;
+
+        
+int numSubstrings = (int) Math.ceil((double)
+ originalString.length() / substringLength);
+
+
+        for (int i = 0; i < numSubstrings; i++) {
+            int start = i * substringLength;
+ int end = Math.min((i + 1) * substringLength, originalString.length());
+
+            String substring = originalString.substring(start, end);
+            System.out.println("Substring " + (i + 1) + ": " + substring);
+        }
+    }
+}
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7025string41.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION42:Program to swap two string variables without using third or temp variable.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION43: Program to Swapping Pair of Characters</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION44: Read two String user input and check if first contains second?</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION45:Reserve String without reverse() function</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION46:Reverse String Word by Word</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION47:Write a program to check if two Strings are created with same characters?</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION48:Write a program to find out first non repeated character from input String?</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION49:Create an object StringBuffer class to reverse the string.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION50:Create an object StringBuffer class to show functionality of insert, append, delete and replace functions.</p>
+ <pre>
+  PROGRAM:             
+  /*
+  50. Create an object StringBuffer class to show functionality of insert, append, delete and replace functions. 
+*/
+class Test
+{
+  public static void main(String args[])
+  {
+      StringBuffer string_buffer = new StringBuffer("write");
+
+      /* [ insert ] */
+
+      // System.out.println(new StringBuffer(" if just use ").toString());
+
+      string_buffer.insert(5,"\n inbuild function insert() ");
+
+
+      /* [ append ] */ 
+
+      string_buffer.append("\n If you are like follow me at https://github.com/MayankDevil/ ");
+
+      // System.out.println(string_buffer.toString());
+      
+      /* [ replace ] */ 
+
+      string_buffer.replace(0,5,"wrong");
+
+      /* [ delete ] */
+
+      string_buffer.delete(5,20);
+
+      /* [ display ] */ 
+
+      System.out.println(string_buffer);
+  }
+}
+/*
+
+*/     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Strings/7027String50.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+
+  
+              
+            </body>
+            </html>
+           

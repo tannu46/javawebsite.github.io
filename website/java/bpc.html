@@ -1,0 +1,2893 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+</head>
+<style>
+   
+h1{
+       text-align: center;
+       font-weight: lighter;
+       font-size: 60px;
+       color: white;
+       margin: 0;
+       padding-left: 10px;
+           }
+           p{
+               padding-left: 5px;
+               font-size: 30px;
+               font-weight: lighter;
+               color: white;
+               margin: 0;
+       
+           }
+          
+           b{
+               font-weight: lighter;
+               font-size: 25px;
+               color:white;
+               margin: 0;
+               padding-left: 10px;
+           }
+           *{
+   
+      margin: 0;
+     
+      padding: 0;
+     
+      box-sizing: border-box;
+     
+     }
+     
+     
+     
+     .dropdown{
+     
+         margin: 0 auto;
+         background: rgb(17,16,16);
+background: radial-gradient(circle, rgba(17,16,16,1) 7%, rgba(11,113,232,1) 100%);
+         background-position: center center;
+         -webkit-background-size: cover ;
+         background-size: cover;
+         background-attachment: fixed;
+        
+         /* position: fixed; */
+     
+     }
+     
+     nav{
+     
+         height: 65px;
+     
+         background-color:#0a9395 ;
+     
+         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+         text-align:justify;
+         font-size: 30px;
+        
+     }
+     
+     .logo{
+      width: 4rem;
+      float: left;
+      margin-top:2em ;
+      clip-path: circle(45.4% at 50% 50%);
+        
+         width: 70px;
+     
+         display: inline;
+     
+         margin-top: -5px;
+     
+         margin-left: 10px;
+        
+     }
+     
+     nav ul{
+     
+         padding: 0;
+     
+         margin: 0;
+     
+         float: right;
+     
+         margin-right: 25px;
+     
+     }
+     
+     nav ul li{
+      background:#0a9395  ;
+         
+     
+         position: relative;
+     
+         list-style: none;
+     
+         display: inline-block;
+     
+     }
+     
+     nav ul li a{
+     
+         display: flex;
+     
+         padding: 0 15px;
+     
+         color:black;
+     
+         text-decoration: none;
+     
+         line-height: 65px;
+     
+         font-size: 25px;
+     
+         justify-content: space-between;
+     
+         align-items: center;
+     
+         text-align: center;
+     
+     }
+     
+     nav ul li a:hover{
+     
+         background:#0c5454;
+     
+     }
+     
+     nav ul ul{
+     
+         position: absolute;
+     
+         top: 60px;
+     
+         display: none;
+     
+     }
+     
+     nav ul li:hover > ul{
+     
+         display: block;
+     
+     }
+     
+     nav ul ul li{
+     
+         width:150px;
+     
+         float: none;
+     
+         display: list-item;
+     
+         position: relative;
+     
+     }
+     p {
+        margin-top: 50px;
+        text-align: center;
+        font: size 30px;
+        color: yellow
+     }
+        pre
+         {
+            background-color: beige;
+            color: #000000;
+            font-size: 25px ;
+            margin: 250px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+          
+            border-radius: 25px;
+         }
+
+         .img-container {
+        text-align: center;
+        display: block;
+      }
+    
+    </style>
+    <body>
+    
+       <div class="dropdown">
+           <nav>
+               <img src="../images/main0.jpg" class="logo"><a>ASCODERS</a>
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                   <li><a href="#">Tutorial</a>
+                       <ul>
+                           <li><a href="../HTML.html">HTML</a></li>
+                           <li><a href="../CSS.html">CSS</a></li>
+                           <li><a href="../Java Script.html">Java Script</a></li>
+                            <li><a href="../dbms.html">DBMS</a></li>
+                           <li><a href="../sql.html">SQL</a></li>
+                           <li><a href="../plsql.html">PL/SQL</a></li>
+                           <li><a href="../java.html">JAVA</a></li>
+                           <li><a href="../php.html">PHP</a></li>
+                           
+                       </ul>
+                   </li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Contact Us</a></li>
+               </ul>
+           </nav><br>
+<h1>CORE JAVA PROGRAMMING: Practice Problems</h1>
+<p> QUESTION1:Write a Java program to print ‘Hello World!’ on screen</p>
+ <pre>
+  PROGRAM:             
+ 
+class Test
+{
+    public static void main(String args[])
+    {
+        System.out.println("Hello World");
+    }
+}
+// the end   
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc1.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION2:Write a Java program to print the sum of two numbers</p>
+ <pre>
+  PROGRAM:             
+  class p2 {
+    public static void main(String args[]) {
+        int a = 12390;
+        int b = 440;
+        int c = a + b;
+   System.out.println("The Sum og given number is :" + c);
+    }
+}
+    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc2.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION3:Write a Java program that takes two numbers and display the product of two numbers</p>
+ <pre>
+  PROGRAM:             
+  
+  class ProductNums
+  {
+public static void main(String str[])throws java.io.IOException
+    {	
+System.out.println("Computing the product of two number
+ using BufferedReader Class");
+  
+java.io.InputStreamReader obj = new java.io.
+InputStreamReader(System.in);
+java.io.BufferedReader input = new java.io.BufferedReader(obj);
+      System.out.println("enter a number : ");
+      int a=Integer.parseInt(input.readLine());
+      System.out.println("enter a number : ");
+      int b=Integer.parseInt(input.readLine());
+      System.out.println(a*b);
+      
+      
+System.out.println("Now we'll compute the product using 
+Scanner Class");
+  
+java.util.Scanner input1 = new java.util.Scanner(System.in);
+      System.out.println("enter a number : ");		
+      int a1=input1.nextInt();
+  
+      System.out.println("enter a number : ");
+      int b1=input1.nextInt();
+System.out.println("Product of the two number is : "+ a1*b1);
+      
+      
+      
+    }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7034bpc3.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION4:Write a Java program to print the sum, multiply, subtract, divide and remainder of two numbers</p>
+ <pre>
+  PROGRAM:             
+  /*
+  -   programmer:MayankDevil
+  -   4. Write a Java program to print the sum, multiply, subtract, divide and remainder of two numbers
+  */ 
+  class Test
+  {
+public static void main(String args[])
+      {
+          int n1 = 5;
+  
+          int n2 = 3;
+  
+System.out.println("The two number"+n1+" and "+n2
+              +"\n sum is "+(n2+n1)
+              +"\n multiply is "+(n2*n1)
+              +"\n subtract is "+(n2-n1)
+              +"\n divide is "+(n2/n1)
+              +"\n remainder is "+(n2%n1)
+              );
+          
+      }
+  }
+  // the end    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc4.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION5:Write a Java program that takes five numbers as input to calculate and print the average of the numbers</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+  class average {
+      public static void main(String[] a) {
+          Scanner s=new Scanner(System.in);
+          double sum=0;
+          System.out.println("Enter Five Numbers: ");
+  
+          for(int i=0;i<5;i++){
+              double number = s.nextDouble();
+              sum+=number;
+          }
+          double average=sum/5;
+ System.out.println("The average of the five numbers is : "+average);
+      }
+  }     <>
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7003BPC_5.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION6: Write a Java program to swap two variables</p>
+ <pre>
+  PROGRAM:             
+  // Swapping two variables
+  import java.util.Scanner;
+  class Bpc6{
+      void swap(int f,int s){
+          System.out.println("After Swapping both variables ");
+          f=f+s;
+          s=f-s;
+          f=f-s;
+          System.out.println("First Number : "+f);
+          System.out.println("Second Number : "+s);
+      }
+  }
+  class b{
+      public static void main(String str[]){
+      Bpc6 obj = new Bpc6();
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter the first Number : ");
+      int f=sc.nextInt();
+      System.out.println("Enter the Second Number : ");
+     int s=sc.nextInt(); 
+     obj.swap(f,s);
+  
+  }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7074bpc6.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION7:Write a Java program to convert a decimal number to binary numbers</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+  class decimaltobinary
+ {
+    
+     public static void main(String[] args) {
+      
+         int rem,num;
+         String binaryNumber = "";
+         
+         Scanner input = new Scanner(System.in);
+       
+         System.out.print("Enter a Decimal Number : ");
+        
+         num = input.nextInt();
+       
+         while(num > 0){
+         
+           rem = num % 2;
+           
+           binaryNumber = rem + "" + binaryNumber;
+           
+           num =num / 2;
+         }
+         
+         System.out.println("Binary Number : "+binaryNumber);
+     }
+ }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7020BPC_7.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION8: Write a Java program to convert a binary number to decimal number</p>
+ <pre>
+  PROGRAM:             
+  
+  class Test
+  {
+      public static void main(String args[])
+      {
+          String binary = "1010011";  // binary number
+  
+          
+  
+          int decimal = Integer.parseInt(binary, 2);
+  
+ System.out.println(binary+" binary to decmial is "+decimal);
+      }
+  }
+  // the end    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc8.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION9: Write a Java program to check whether Java is installed on your computer or not</p>
+ <pre>
+  PROGRAM:             
+  
+  class Test
+  {
+      public static void main(String args[])
+      {
+          System.out.println("{ Java is Installed }");   execute
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc9.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION10:Write a Java program and compute the sum of the digits of an integer</p>
+ <pre>
+  PROGRAM:             
+  
+  class Test
+  {
+      public static void main(String args[])
+      {
+          int n = 0;
+  
+          int num = 123;  // take number
+  
+         
+  
+          while (num != 0)
+          {
+              n += num % 10;   // add the last digit to the n
+              num /= 10;      // movet to the next digit
+          }
+  
+          System.out.println(num+" sum of digit is "+n);
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc10.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION11:Write a Java program to compare two numbers</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+
+  class Comparetwonumbers
+  {
+    void CheckEqual(){
+      int num1, num2;
+      System.out.println("Program to compare two numbers");
+      Scanner scan = new Scanner(System.in);
+      System.out.print("Enter first number : ");
+      num1 = scan.nextInt();
+      System.out.print("Enter second number : ");
+      num2 = scan.nextInt();
+      if(num1 == num2){
+        System.out.println("Both numbers are equal");
+      }
+      else{
+        System.out.println("Numbers are not equal");
+      }
+    }
+    public static void main(String args[]){
+      Comparetwonumbers obj = new  Comparetwonumbers();
+      obj.CheckEqual();
+    }
+  }    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7020BPC_11.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION12:Write a Java program to count the letters, spaces, numbers and other characters of an input string</p>
+ <pre>
+  PROGRAM:             
+  
+  class Test
+  {
+      public static void main(String args[])
+      {
+          String line = "rtx (500) is ready";
+  
+          int string_letter = 0;
+          int string_space = 0;
+          int string_symbol = 0;
+  
+          /* compare is equal | greater | less */
+  
+          for (char c : line.toCharArray())
+          {
+              if  (Character.isWhitespace(c))
+                  string_space ++;
+              if (Character.isLetter(c))
+                  string_letter ++;
+              else
+                  string_symbol ++;
+          }
+  
+System.out.println("string "+line.length()+" length 
+"+string_letter+" letter "+string_symbol+" symbol 
+"+string_space+" space");
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc12.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION13:Write a Java program to print the ascii value of a given character</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;  
+  class AsciiValue  
+ {  
+ public static void main(String args[])  
+ {  
+ System.out.print("Enter a character: ");  
+ Scanner sc = new Scanner(System.in);  
+ char chr = sc.next().charAt(0);  
+ int asciiValue = chr;  
+ System.out.println("ASCII value of " +chr+ " is: 
+ "+asciiValue);  
+ }  
+ }       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7020BPC_13.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION14:Write a Java program that accepts an integer (n) and computes the value of n+nn+nnn</p>
+ <pre>
+  PROGRAM:             
+ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+          System.out.println("enter number = ");
+  
+int n = new java.util.Scanner(System.in).nextInt(); // get input number
+  
+for (int o = 1; o <= n; o++)    /* outer loop : 1 to number */
+          {
+for (int i = 0; i <o; i++)  System.out.print("n");  
+              
+              if (o != n) System.out.print("+"); 
+          }
+      }
+  }
+<>   
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc14.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION15:Write a Java program to display the system time</p>
+ <pre>
+  PROGRAM:             
+  import java.time.LocalTime;
+
+  class SystemTime {
+      public static void main(String[] args) {
+          // Get the current system time
+          LocalTime currentTime = LocalTime.now();
+  
+          // Display the system time
+          System.out.println("System Time: " + currentTime);
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7059bpc15.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION16: Write a Java program to print the odd numbers from 1 to 20</p>
+ <pre>
+  PROGRAM:             
+ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+          for (int i = 1; i < 20; i += 2)
+              System.out.print(i);
+      }
+  }
+  // the end    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc16.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION17:Write a Java program to print the even numbers from 1 to 20</p>
+ <pre>
+  PROGRAM:             
+  
+  class Test
+  {
+      public static void main(String args[])
+      {
+          for (int i = 0; i < 20; i += 2)
+              System.out.print(i);
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc17.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION18:Write a Java program to convert a string to an integer</p>
+ <pre>
+  PROGRAM:             
+  
+  class Test
+  {
+      public static void main(String args[])
+      {
+          System.out.println(Integer.parseInt("10")+2);
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc18.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION19:Write a Java program to convert seconds to hour, minute and seconds</p>
+ <pre>
+  PROGRAM:             
+ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+          int seconds = 240000;
+  
+  System.out.println("seconds "+seconds+" minutes"+(seconds
+   / 60)+"hours"+((seconds / 60) / 60));
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc19.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION20:Write a Java program to compute the sum of the first 100 prime numbers</p>
+ <pre>
+  PROGRAM:             
+ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+  
+          int num = 541;    /* 100th prime number is 541 */
+  
+          int sum = 0;
+  
+          for (int n = 2; n < num; n++)
+          {
+              boolean isPrime = true;
+              
+   for (int i = 2; i < n; i++) if (n%i == 0) isPrime = false;
+  
+              if (isPrime) sum += n;
+          }
+          System.out.println("sum of 100 prime number is "+sum);
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc20.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION21: Write a Java program to swap the first and last elements of an array and create a new array</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION22:Write a Java program to count the number of even and odd elements in a given array</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION23:Write a Java program to compute the square root of an given integer</p>
+ <pre>
+  PROGRAM:             
+  
+  class Test
+  {
+      public static void main(String args[])
+      {
+          int n = 2;
+  
+          System.out.println(" square root is "+(n * n));  // check value
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc23.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION24: Write a Java program to check if a positive number is a palindrome or not</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION25:Write a Java program to add two numbers without using any arithmetic operators</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION26:Write a Java program to add all the digits of a given positive integer</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION27:Java program to find area of circle</p>
+ <pre>
+  PROGRAM:             
+  /*
+  -   programmer:MayankDevil
+  -   27. Java program to find area of circle
+  */ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+          System.out.print(" enter radius of circle  = ");
+  
+  float radius = new java.util.Scanner(System.in).nextFloat();
+  
+          /* area of circle is [ pi * radius square]*/ 
+  
+ System.out.println("area of circle is "+(3.14 * radius * radius));
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc27.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION28:Java Program to find area of rectangle</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION29:Java Program to find area of triangle</p>
+ <pre>
+  PROGRAM:             
+  /*
+  -   programmer:MayankDevil
+  -   29. Java Program to find area of triangle
+  */ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+java.util.Scanner input = new java.util.Scanner(System.in);
+          
+          System.out.print(" enter base  = ");
+  
+          float b = input.nextFloat(); 
+          
+          System.out.print(" enter height  = ");
+  
+          float h = input.nextFloat(); 
+  
+          /* area of triangle is [base * hegiht / 2]*/ 
+  
+ System.out.println("area of triangle is "+((b * h) / 2));
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc29.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION30:Java Program to find area of equilateral triangle</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION31:Java Program to find area of rhombus</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION32: Java Program to find area of parallelogram</p>
+ <pre>
+  PROGRAM:             
+  /*
+  -   programmer:MayankDevil
+  -   32. Java Program to find area of parallelogram
+  */ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+   java.util.Scanner input = new java.util.Scanner(System.in);
+  
+  System.out.println("Enter the base:");
+  
+  double b = input.nextDouble();
+          
+  System.out.println("Enter the height:");
+          
+  double h = input.nextDouble();
+  
+   /* area of parallelogram is [ base * height ] */
+          
+   System.out.println("Area of Parallelogram is: "+(b * h));
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/bpc32.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION33: Java Program to find area of Prism</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION34:Java Program to find volume of sphere</p>
+ <pre>
+  PROGRAM:             
+  /*
+  -   programmer:MayankDevil
+  -   34. Java Program to find volume of sphere
+  */ 
+  class Test
+  {
+      public static void main(String args[])
+      {        
+          double radius = 2.0;
+          
+System.out.printf("The volume of the sphere is %.2f
+ cubic units.",((4.0 / 3.0) * Math.PI * Math.pow(radius, 3)));
+      }
+  }
+  // the end    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/program34.pngS" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION35:Java Program to find volume of cylinder</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTIO36:Java Program to find volume of cuboid</p>
+ <pre>
+  PROGRAM:             
+  /*
+  -   programmer:MayankDevil
+  -   36. Java Program to find volume of cuboid
+  */ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+    double l = 2;
+  
+   double b = 3;
+  
+  double h = 2;
+  
+  System.out.println("Volume Of Cuboid is:"+(l * b * h));
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/program36.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION37:Java Program to find volume of cone</p>
+ <pre>
+  PROGRAM:             
+  /*
+  -   programmer:MayankDevil
+  -   37. Java Program to find volume of cone
+  */ 
+  class Test
+  {
+      public static void main(String args[])
+      {
+          double r = 3;
+  
+          double h = 5;
+  
+System.out.println("Volume Of Cone is: "+((22 * r
+ * r * h) / (3 * 7)));
+      }
+  }
+  // the end     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/program37.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION38:Java program to find surface area of cuboid</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION39:Java program to find surface area of cylinder</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION40:Java program to find surface area of cube</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+  class a
+  {
+      public static void main (String x[])
+      {
+       Scanner s=new Scanner(System.in);
+      System.out.println("To calculate surface area of cube:");
+      System.out.println("Enter the side of cube: ");
+      // input value
+       float side=s.nextFloat();
+       float area;
+       area=6*side*side;
+       System.out.println("Surface area of cube:"+area);
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7039bpc40.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION41:Java program to calculate average marks</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION42:Java program to check vowel or consonant</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION43:Java program to sum of N numbers</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION44:Java program to find factorial of any number</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION45:Java Program to calculate electricity bill</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+  class electricBill{
+    void CalcBill(){
+      System.out.println("Program to calculate Electricity Bill");
+      Scanner scan = new Scanner(System.in);
+      double rate, unit, total;
+      System.out.print("Enter the rate per unit (in rupees) : ");
+      rate = scan.nextInt();
+      System.out.print("Enter the number of units consumed : ");
+      unit = scan.nextInt();
+      total = rate * unit;
+      System.out.println("Total Electricity Bill is : " + total);
+    }
+    public static void main(String args[]){
+      electricBill obj = new electricBill();
+      obj.CalcBill();
+    }
+  }    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7020BPC_45.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION46: Java Program To Calculate CGPA Percentage</p>
+ <pre>
+  PROGRAM:             
+  class basic_programming_constructs_46 {
+    public static void main(String[] args) 
+    throws java.io.IOException {
+java.io.BufferedReader input = new java.io
+.BufferedReader(new java.io.InputStreamReader(System.in));
+
+        try {
+ System.out.print("Enter the total number of subjects: ");
+    int totalSubjects = Integer.parseInt(input.readLine());
+
+            if (totalSubjects <= 0) {
+   System.out.println("Please enter a valid number of subjects.");
+            } else {
+                double totalCredits = 0;
+                double totalGradePoints = 0;
+
+                for (int i = 1; i <= totalSubjects; i++) {
+  System.out.print("Enter the credits for subject " + i + ": ");
+    double credits = Double.parseDouble(input.readLine());
+    System.out.print("Enter the grade points for subject " + i + ": ");
+    double gradePoints = Double.parseDouble(input.readLine());
+
+                    totalCredits += credits;
+                    totalGradePoints += (credits * gradePoints);
+                }
+
+                double cgpa = totalGradePoints / totalCredits;
+                double percentage = cgpa * 9.5;
+
+                System.out.println("CGPA: " + cgpa);
+                System.out.println("Percentage: " + percentage + "%");
+            }
+        } catch (NumberFormatException e) {
+ System.out.println("Invalid input. Please enter valid numeric values.");
+        } catch (Exception e) {
+            System.out.println("Something went wrong.");
+        }
+    }
+}     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7041bpc41.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION47: Java Program to calculate compound interest</p>
+ <pre>
+  PROGRAM:             
+  import java.io.*; 
+  
+  class CI 
+  { 
+      public static void main(String args[]) 
+      { 
+          double principal = 10000, rate = 10, time = 5; 
+          double CI = principal * 
+                      (Math.pow((1 + rate / 100), time)); 
+            
+          System.out.println("Compound Interest is "+ CI); 
+      } 
+  } 
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION48: Java Program To Calculate Batting Average</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION49:Java Pogram to Calculate Commission Percentage</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION50:Java Pogram To Find Distance Between Two Points</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION51: Java Program To Calculate Power Of Number</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+  //Java Program To Calculate Power Of Number
+  
+    class kamal7019java51 {
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+      System.out.print("Enter the base number: ");
+      int base = input.nextInt();
+      System.out.print("Enter the exponent: ");
+      int exponent = input.nextInt();
+      long result = 1;
+      while (exponent != 0) {
+        result *= base;
+        --exponent;
+      }
+System.out.println(base + "^" + exponent + " = " + result);
+    }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION52:Write a Java program to take three numbers from the user and print the greatest number</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION53: Write a Java program to find the number of days in a month</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION54:Write a Java program to test a number is positive or negative</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION55:Write a Java Program to accept number of week’s day (1-7) and print name of the day</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION56:Write a Java program that takes a year from user and print whether that year is a leap year or not</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION57:Write a Java program to input 5 numbers from keyboard and find their sum and average</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION58:Write a program in Java to display the first 5 natural numbers</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION59:Write a java program to check vowel or consonant</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION60:Write a Java program to display the cube of the number upto given an integer</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION61: Write a Java program to display the n terms of odd natural number and their sum</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION62:Write a Java program to display the multiplication table of a given integer</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION63:Write a Java program that reads an integer and check whether it is negative, zero, or positive</p>
+ <pre>
+  PROGRAM:             
+  class basic_programming_constructs_63 {
+    public static void main(String[] args) {
+   java.io.BufferedReader input = new java.io.
+   BufferedReader(new java.io.InputStreamReader(System.in));
+
+        try {
+            System.out.print("Enter a number: ");
+            double number = Double.parseDouble(input.readLine());
+            StringBuffer msg = new StringBuffer("zero");
+
+            if (number > 0) {
+                msg.replace(0, msg.length(), "positive");
+            } else if (number < 0) {
+                msg.replace(0, msg.length(), "negative"); 
+            }
+
+            System.out.println("The number is " + msg);
+        } catch (java.util.InputMismatchException e) {
+   System.out.println("Invalid input. Please enter a valid numeric value.");
+        } catch (Exception e) {
+            System.out.println("Something went wrong.");
+        }
+    }
+}    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION64: Write a Java program that reads an positive integer and count the number of digits</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION65:Write a Java program that accepts three numbers and check All numbers are equal or not</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION66:Write a java program that accepts three numbers from the user and check if numbers are in “increasing” or “decreasing” order.</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+  class IncDec {
+     public static void main(String[] args)
+      {
+          Scanner in = new Scanner(System.in);
+          System.out.print("Input first number: ");
+          double x = in.nextDouble();
+          System.out.print("Input second number: ");
+          double y = in.nextDouble();
+         System.out.print("Input third number: ");
+          double z = in.nextDouble();
+          if (x < y && y < z)
+          {
+              System.out.println("Increasing order");
+          }
+          else if (x > y && y > z)
+          {
+              System.out.println("Decreasing order");
+          }
+          else
+          {
+ System.out.println("Neither increasing or decreasing order");
+          }
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION67: Write a Java program that determines a student’s grade</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION68: Write a Java program to create a simple calculator</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION69:Write a Java program to concatenate two string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION70:Write a Java program to convert all characters in a string to lowercase</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION71:Write a Java program to convert all characters in a string to uppercase</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION72:Write a Java program to trim a string(remove whitespaces)</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION73:Write a Java program to get a substring of a given string between two specified positions</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION74:Write a Java program to replace all the ‘d’ characters with ‘f’ characters</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION75: Write a java program to get the length of a given string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION76:Write a java program to print current date and time in the specified format</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION77: Write a Java program to get the character at the given index within the String
+
+</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION78: Write a java program to remove a particular character from a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION79: Write a java program to reverse a String</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION80:Write a java program to remove html tags from a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION81: Write a java program to count total number of lines from a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION82:Write a Java program to sum values of an array</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION83:Write a Java program to find the index of an array element</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION84:Write a Java program to calculate the average value of array elements</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION85:Write a Java program to test if an array contains a specific value</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION86:. Write a Java program to find the maximum and minimum value of an array</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION87:Write a Java program to insert an element (specific position) into an array</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION88:Write a Java program to reverse an array of integer values</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION89: Write a Java program to find the common elements between two arrays</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION90:Write a Java program to find the duplicate values of an array of integer values</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION91:Write a Java program to convert an array to ArrayList</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION92:Write a Java program to add two matrices of the same size</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION93:Write a Java program to find second largest number from the array</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION94:Write a Java program to find second lowest number from the array</p>
+ <pre>
+  PROGRAM:             
+  class lowest
+  {
+    lowest()
+    {
+      System.out.println("\nObject is created");
+    }
+    public static void main(String brr[])
+    {
+      java.util.Scanner s1= new java.util.Scanner(System.in);
+      int first,second,i,index=-1;
+      int arr[]=new int[5];
+      for(i=0;i<(arr.length);i++)
+      {
+        System.out.print("\nEnter the "+(i+1)+" integer number :- ");
+        arr[i]=s1.nextInt();
+      }
+      first=arr[0];
+      second=arr[0];
+      for(i=1;i<(arr.length);i++)
+      {	
+        if(first>arr[i])
+        {
+          second=first;
+          index=i;
+          first=arr[i];
+        }
+      }
+      i=index+1;
+      for(;i<(arr.length);i++)
+      {
+        if(second>arr[i])
+        {
+          second=arr[i];
+        }			
+      }
+  System.out.print("\nthe first lowest number will be :- "+first);
+  System.out.print("\nthe second lowest number will be "+second);
+      
+    }
+  }    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7004bpc94.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION95: Write a Java program to find the number of even and odd integers in a given array of integers</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Arrays;
+
+  public class evenodd {
+      public static void main(String[] args) {
+          int[] array_nums = {1, 13, 5, 19, 10};
+  
+          System.out.println("Original Array: "
+           + Arrays.toString(array_nums));
+  
+          int ctr = 0;
+  
+          for (int i = 0; i < array_nums.length; i++) {
+              if (array_nums[i] % 2 == 0)
+                  ctr++;
+          }
+  
+   System.out.println("Number of even numbers :
+    " + ctr);
+   System.out.println("Number of odd numbers  : 
+   " + (array_nums.length - ctr));
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7031bpc95.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION96: Write a Java program to get the difference between the largest and smallest values in an array of integers</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION97:Write a Java program to segregate all 0s on left side and all 1s on right side of a given array of 0s and 1s</p>
+ <pre>
+  PROGRAM:             
+  class ninty_seven{
+    static void display(int[] arr){
+      for(int i: arr)
+        System.out.print(i + " ");
+      System.out.println();
+    }
+    public static void main(String[] args){
+      int  zero = 0;
+      int[] arr = {0,1,1,1,0,0,1,0,0,1};
+      System.out.print("Array before separation : ");
+      display(arr);
+      for(int i: arr){
+        if(i==0) zero++;
+      }
+      for(int i=0; i<arr.length; i++){
+        if(zero>0){
+          arr[i] = 0;
+          zero--;
+        }
+        else arr[i] = 1;
+      }
+      System.out.print("Array after separation : ");
+      display(arr);
+    }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7001bpc97.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION98: Write a Java program to cyclically rotate a given array clockwise by one</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION99:java program to print all unique element in an array</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION100: Write a Java Program to Sort the Array in an Ascending Order</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION101:Write a Java Program to Sort the Array in an Descending Order</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION102:Write a Java Program to Sort Names in an Alphabetical Order</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION103:Write a Java Program to Display Transpose Matrix</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION104:Write a Java Program to Search Key Elements in an Array</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION105:Write a Java Program to Accept the Marks of a Student and find Total Marks and Percentage</p>
+ <pre>
+  PROGRAM:             
+  import java.util.*;   
+  class percentages
+  { 
+      public static void main(String args[]) 
+      {   
+          Scanner sc = new Scanner(System.in); 
+          int n;  
+          
+          System.out.println("Enter the total subjects ");
+          n=sc.nextInt();
+          
+          int arr[] = new int[n]; 
+          System.out.println("Enter the marks secured in each subject ");
+          for(int i=0;i<n;i++) 
+          {
+              arr[i]=sc.nextInt();
+          }
+          
+          int total=0;
+          for(int i=0;i<n;i++)
+          {
+              total=total+arr[i];
+          }
+          System.out.println("The total marks obtained is "+total);
+          float percentage; 
+          percentage = (total / (float)n); 
+          System.out.println( "Total Percentage : " + percentage + "%");                         
+      }   
+  }
+<>      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7031bpc105.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION106:Write a java program to print numbers from 1 to 10 using loop</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION107:Write a java program to calculate the sum of first 10 natural number using loop</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION108:Write a Java program to print multiplication table of given number</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION109: Write a Java program to find the factorial value of any number entered through the keyboard</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION110: Write a Java program that prompts the user to input an integer and then outputs the number with the digits reversed order</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION111:Write a Java program that reads a set of integers, and then prints the sum of the even and odd integers using loop</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION112:Write a Java program to check whether the number is a prime number or not</p>
+ <pre>
+  PROGRAM:             
+  class Program102{
+    public static void main(String args[])throws ClassNotFoundException{
+        String names[] = {"Sourabh", "Jatin", "Jaspreet", "Rishav", "Yaman"};
+        java.util.Arrays.sort(names); 
+        System.out.println("Names in alphabetical order : ");
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);            
+        }
+    }
+}     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7038B" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION113:Write a Java program to calculate HCF of Two given numbers using loop</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION114:Write a Java program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION115:Write a Java program to enter the numbers till the user wants and at the end the program should display the largest and smallest numbers entered</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION116:Write a Java program to print out all Armstrong numbers between 1 to 600 using loop</p>
+ <pre>
+  PROGRAM:             
+  class a1
+  {
+    a1()
+    {
+      System.out.println("\nObject is created");
+    }
+    public static void main(String brr[])
+    {
+      int count=0,totalsum=0,sumcube=1,demo,cube,number;
+      for(int j=1;j<=600;j++)
+      {
+        number=j;
+        demo=number;
+        while(demo>0)
+        {
+          count++;
+          demo=demo/10;
+        }
+        demo=number;
+        while(demo>0)
+        {
+          cube=demo%10;
+          for(int i=1;i<=count;i++)
+          {
+            sumcube=sumcube*cube;
+          } 
+          totalsum=totalsum+sumcube;
+          demo=demo/10;
+          sumcube=1;
+        }
+        if(number==totalsum)
+        {
+     System.out.print("\nthe "+number+" will be armstrom number ");
+        }
+          totalsum=0;
+          count=0;
+      }
+    
+    }
+      
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7004bpc116.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION117:Write a java program to count total number of notes in entered amount using loop</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION118:Write a Java program to print Fibonacci series of n terms where n is input by user using loop</p>
+ <pre>
+  PROGRAM:             
+  class oneHundredEighteen {
+public static void main(String[] args) throws java.io.IOException {
+        int num = 0, first = 0, second = 1, next = 0;
+  java.io.BufferedReader reader = new java.io.BufferedReader
+  (new java.io.InputStreamReader(System.in));
+        System.out.print("Enter a number: ");
+        try {
+            num = java.lang.Integer.parseInt(reader.readLine());
+System.out.println("Fibonnaci series of " + num + " terms is ");
+            for (int i = 1; i <= num; i++) {
+                if(i==1) System.out.print(first + " ");
+                else if(i==2) System.out.print(second + " ");
+                else{
+                    next = first + second;
+                    System.out.print(next + " ");
+                    first = second;
+                    second = next;
+                }
+            }
+            System.out.println();
+        } catch (java.lang.NumberFormatException e) {
+System.out.println("Invalid input. Please enter a valid number.");
+        }
+    }
+}     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7001bpc118.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION119: Write a java program to calculate the sum of following series where n is input by user</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION120:Write a Java method to compute the average of three numbers</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION121:Write a Java method to find the smallest number among three numbers</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION122:Write a Java method to count all words in a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION123: Write a Java method to count all vowels in a string</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION124:Write a Java method to compute the sum of the digits in an integer</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION125:Write a Java method to check whether an year entered by the user is a leap year or not</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION126:Write a Java method to calculate the area of a triangle</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION127:Write a Java method to find the area of a pentagon</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION128: Write a Java method to find number is even number or not</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION29: Write a Java method to check numbers is palindrome number or not</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION130:Write a Java method to displays prime numbers between 1 to 20</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION131:Write a Java method to find GCD and LCM of Two Numbers</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION132:Write a Java method to find factorial using recursion in java</p>
+ <pre>
+  PROGRAM:             
+  class oneHundredThirtyTwo {
+    private static java.util.HashMap<Integer, Long> track = new java.util.HashMap<Integer, Long>();
+
+    static long fact(int n){
+        if(track.containsKey(n)) return track.get(n);
+        long result =  n*fact(n-1);
+        track.put(n, result);
+        return result;
+    }
+    public static void main(String[] args) throws java.io.IOException {
+        int num = 0;
+        track.put(0, (long)1);
+        track.put(1, (long)1);
+        java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
+        System.out.print("Enter a number: ");
+        try {
+            num = java.lang.Integer.parseInt(reader.readLine());
+            long ans = fact(num);
+            System.out.println("Factorial of " + num + " is " + ans);
+        } catch (java.lang.NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a valid number.");
+        }
+    }
+}     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7001bpc132.png" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION133:Write a Java program to reverse an integer number</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION134:Write a Java program to round a float number to specified decimals</p>
+ <pre>
+  PROGRAM:             
+  class a 
+  {
+  
+      public static float roundFloat(float number, int decimalPlaces)
+   {
+          float factor = (float) Math.pow(10, decimalPlaces);
+          number = number * factor;
+          number = Math.round(number);
+          number = number / factor;
+          return number;
+    }
+  
+      public static void main(String[] args) 
+    {
+          float original;
+          int decimalPlaces;
+    java.util.Scanner s1=new java.util.Scanner(System.in);
+    System.out.print("Enter the float number :- ");
+    original=s1.nextFloat();
+    System.out.print("Enter the round decimal number :- ");
+    decimalPlaces=s1.nextInt();
+          float roundedNumber = roundFloat(original, decimalPlaces);
+          System.out.println("Original number: " + original);
+    System.out.println("Rounded number to " + decimalPlaces + 
+    " decimal places: " + roundedNumber);
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7004bpc134.png" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION135:Write a Java program to test if a double number is an integer</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION136:Write a Java program to round up the result of integer division</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION137:Write a Java program to convert Roman number to an integer number</p>
+ <pre>
+  PROGRAM:             
+  public class RomanToInteger
+  {
+ 
+       public static void main(String[] args)
+    {
+           String romanNumeral;
+     java.util.Scanner s1=new java.util.Scanner(System.in);
+     romanNumeral=s1.nextLine(); 
+           int integerValue = convertRomanToInt(romanNumeral);
+           System.out.println(romanNumeral + " = " + integerValue);
+       }
+ 
+       private static int convertRomanToInt(String romanNumeral) 
+   {
+         Map<Character, Integer> romanNumeralValues = new HashMap<>();
+         romanNumeralValues.put('I', 1);
+         romanNumeralValues.put('V', 5);
+         romanNumeralValues.put('X', 10);
+         romanNumeralValues.put('L', 50);
+         romanNumeralValues.put('C', 100);
+         romanNumeralValues.put('D', 500);
+         romanNumeralValues.put('M', 1000);
+         int integerValue = 0;
+         for (int i = 0; i < romanNumeral.length(); i++)
+    {
+             int currentRomanNumeralValue = romanNumeralValues.get(romanNumeral.charAt(i));
+ 
+             if (i + 1 < romanNumeral.length() && currentRomanNumeralValue < romanNumeralValues.get(romanNumeral.charAt(i + 1)))
+       {
+                 integerValue -= currentRomanNumeralValue;
+             }
+     else {
+                 integerValue += currentRomanNumeralValue;
+             }
+         }
+ 
+         return integerValue;
+     }
+ }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION138:Write a Java program to convert a float value to absolute value</p>
+ <pre>
+  PROGRAM:             
+  import java.lang.Math;
+
+  class Absolute
+ {
+     public static void main(String[] args) 
+   {
+   java.util.Scanner s1=new java.util.Scanner(System.in);
+         float number;
+   System.out.print("\nEnter the float number :- ");
+   number =s1.nextFloat();
+         float absoluteValue = Math.abs(number);
+  System.out.println("The absolute value of " + number + "
+   is: " + absoluteValue);
+     }
+ }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/basic program construct/7004bpc138.png" alt="prog1" width="1000px"height="300px">
+</span>
+<p> QUESTION139: Write a Java program to accept a float value of number and return a rounded float value</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+
+  
+                
+  
+              
+            </body>
+            </html>
+           

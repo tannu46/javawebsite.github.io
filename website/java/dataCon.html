@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+</head>
+<style>
+   
+h1{
+       text-align: center;
+       font-weight: lighter;
+       font-size: 60px;
+       color: white;
+       margin: 0;
+       padding-left: 10px;
+           }
+           p{
+               padding-left: 5px;
+               font-size: 30px;
+               font-weight: lighter;
+               color: white;
+               margin: 0;
+       
+           }
+          
+           b{
+               font-weight: lighter;
+               font-size: 25px;
+               color:white;
+               margin: 0;
+               padding-left: 10px;
+           }
+           *{
+   
+      margin: 0;
+     
+      padding: 0;
+     
+      box-sizing: border-box;
+     
+     }
+     
+     
+     
+     .dropdown{
+     
+         margin: 0 auto;
+         background: rgb(17,16,16);
+background: radial-gradient(circle, rgba(17,16,16,1) 7%, rgba(11,113,232,1) 100%);
+         background-position: center center;
+         -webkit-background-size: cover ;
+         background-size: cover;
+         background-attachment: fixed;
+         
+         /* position: fixed; */
+     
+     }
+     
+     nav{
+     
+         height: 65px;
+     
+         background-color:#0a9395 ;
+     
+         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+         text-align:justify;
+         font-size: 30px;
+        
+     }
+     
+     .logo{
+      width: 4rem;
+      float: left;
+      margin-top:2em ;
+      clip-path: circle(45.4% at 50% 50%);
+        
+         width: 70px;
+     
+         display: inline;
+     
+         margin-top: -5px;
+     
+         margin-left: 10px;
+        
+     }
+     
+     nav ul{
+     
+         padding: 0;
+     
+         margin: 0;
+     
+         float: right;
+     
+         margin-right: 25px;
+     
+     }
+     
+     nav ul li{
+      background:#0a9395  ;
+         
+     
+         position: relative;
+     
+         list-style: none;
+     
+         display: inline-block;
+     
+     }
+     
+     nav ul li a{
+     
+         display: flex;
+     
+         padding: 0 15px;
+     
+         color:black;
+     
+         text-decoration: none;
+     
+         line-height: 65px;
+     
+         font-size: 25px;
+     
+         justify-content: space-between;
+     
+         align-items: center;
+     
+         text-align: center;
+     
+     }
+     
+     nav ul li a:hover{
+     
+         background:#0c5454;
+     
+     }
+     
+     nav ul ul{
+     
+         position: absolute;
+     
+         top: 60px;
+     
+         display: none;
+     
+     }
+     
+     nav ul li:hover > ul{
+     
+         display: block;
+     
+     }
+     
+     nav ul ul li{
+     
+         width:150px;
+     
+         float: none;
+     
+         display: list-item;
+     
+         position: relative;
+     
+     }
+     p {
+        margin-top: 50px;
+        text-align: center;
+        font: size 30px;
+        color: yellow
+     }
+        pre
+         {
+            background-color: beige;
+            color: #000000;
+            font-size: 25px ;
+            margin: 250px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+          
+            border-radius: 25px;
+         }
+
+         .img-container {
+        text-align: center;
+        display: block;
+      }
+    
+    </style>
+    <body>
+    
+       <div class="dropdown">
+           <nav>
+               <img src="../images/main0.jpg" class="logo"><a>ASCODERS</a>
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                   <li><a href="#">Tutorial</a>
+                       <ul>
+                           <li><a href="../HTML.html">HTML</a></li>
+                           <li><a href="../CSS.html">CSS</a></li>
+                           <li><a href="../Java Script.html">Java Script</a></li>
+                            <li><a href="../dbms.html">DBMS</a></li>
+                           <li><a href="../sql.html">SQL</a></li>
+                           <li><a href="../plsql.html">PL/SQL</a></li>
+                           <li><a href="../java.html">JAVA</a></li>
+                           <li><a href="../php.html">PHP</a></li>
+                           
+                       </ul>
+                   </li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Contact Us</a></li>
+               </ul>
+           </nav><br>
+           <h1>CORE JAVA PROGRAMMING: Practice Problems</h1>
+           <p> QUESTION1:How to convert String to int. </p>
+            <pre>
+               
+     PROGRAM:
+     
+// How to convert String to int
+public class StrToInt 
+{
+	public static void main(String[] args) 
+	{
+		String str = "123";
+		int i=Integer.parseInt(str);
+		System.out.println("String is : "+str);
+		System.out.println("Str Convert to a int: "+ i);
+		System.out.println(1+i);
+		
+	}
+
+}
+
+            </pre>
+
+            <p>OUTPUT:</p>
+            
+            
+            <span class="img-container"> <!-- Inline parent element -->
+                <img src="../javapro/data conversion/dc1.png" alt="prog1" width="1000px" height="300px ">
+              </span>
+
+
+              <p> QUESTION2:How to convert int to String </p>
+            <pre>
+               
+     PROGRAM:
+     
+    
+            </pre>
+
+            <p>OUTPUT:</p>
+            
+            
+            <span class="img-container"> <!-- Inline parent element -->
+                <img src="../javapro/data conversion/" alt="prog1" width="1000px" height="300px ">
+              </span>
+
+              <p> QUESTION3:How to convert String to long. </p>
+            <pre>
+               
+     PROGRAM:
+     public class StringToLongExample {
+        public static void main(String[] args) {
+            // Sample String
+            String numberString = "123456789";
+    
+            try {
+                // Convert String to long
+                long number = Long.parseLong(numberString);
+    
+                // Print the result
+                System.out.println("Converted long value: " 
+                + number);
+            } catch (NumberFormatException e) {
+                System.err.println("Error: Unable to parse 
+                the string as a long.");
+                e.printStackTrace();
+            }
+        }
+    }
+            </pre>
+
+            <p>OUTPUT:</p>
+            
+            
+            <span class="img-container"> <!-- Inline parent element -->
+                <img src="../javapro/data conversion/dc3.jfif" alt="prog1" width="1000px" height="300px ">
+              </span>
+
+              <p> QUESTION4:How to convert long to String. </p>
+            <pre>
+               
+     PROGRAM:
+     public class DataConversion4 {
+
+        public static void main(String[] args) {
+            long myLong = 123456L;
+        String str = Long.toString(myLong);
+        System.out.println(str);
+        
+        }     
+               
+        
+        }
+            </pre>
+
+            <p>OUTPUT:</p>
+            
+            
+            <span class="img-container"> <!-- Inline parent element -->
+                <img src="../javapro/data conversion/dc4.png" alt="prog1" width="1000px" height="300px ">
+              </span>
+
+              <p> QUESTION5:How to convert String to float </p>
+            <pre>
+               
+     PROGRAM:
+     class StringToFloatExample {
+        public static void main(String[] args) {
+            // Example String containing a floating-point number
+            String floatString = "3.14";
+    
+            // Convert String to float using Float.parseFloat()
+            try {
+         float floatValue = Float.parseFloat(floatString);
+         System.out.println("Converted float value: " + floatValue);
+            } catch (NumberFormatException e) {
+          System.out.println("Error: Invalid float format in the
+           input string");
+                e.printStackTrace();
+            }
+        }
+    }
+    
+            </pre>
+
+            <p>OUTPUT:</p>
+            
+            
+            <span class="img-container"> <!-- Inline parent element -->
+                <img src="../javapro/data conversion/dc5.png" alt="prog1" width="1000px" height="300px ">
+              </span>
+
+              <p> QUESTION6:How to convert float to String </p>
+            <pre>
+               
+     PROGRAM:
+     
+ //How to convert float to String
+ public class FloatToString 
+ {
+	public static void main(String[] args) 
+	{
+		float f = 10.4f;
+		System.out.println(f + 2);
+		String stringValue = "" + f;
+		System.out.println(stringValue + 2);
+	}
+
+ }
+
+            </pre>
+
+            <p>OUTPUT:</p>
+            
+            
+            <span class="img-container"> <!-- Inline parent element -->
+                <img src="../javapro/data conversion/dc6.png" alt="prog1" width="1000px" height="300px ">
+              </span>
+
+              <p> QUESTION7: How to convert String to double </p>
+            <pre>
+               
+     PROGRAM:
+     
+            </pre>
+
+            <p>OUTPUT:</p>
+            
+            
+            <span class="img-container"> <!-- Inline parent element -->
+                <img src="../javapro/data conversion/" alt="prog1" width="1000px" height="300px ">
+              </span>
+
+              <p> QUESTION8:How to convert double to String </p>
+            <pre>
+               
+     PROGRAM:
+     import java.util.Scanner;
+     class ja{
+     public static void main(String[] args){
+     Scanner sc = new Scanner(System.in);
+     System.out.print("Enter a double number: "); 
+     double num = sc.nextDouble();
+     String str = Double.toString(num);
+     System.out.println("Converted String: " + str);   
+              }
+      }
+            </pre>
+
+            <p>OUTPUT:</p>
+            
+            
+            <span class="img-container"> <!-- Inline parent element -->
+                <img src="../javapro/data conversion/dc8.png" alt="prog1" width="1000px" height="300px ">
+              </span>
+
+              <p> QUESTION9:How to convert String to Date </p>
+              <pre>
+                 
+       PROGRAM:
+
+              </pre>
+  
+              <p>OUTPUT:</p>
+              
+              
+              <span class="img-container"> <!-- Inline parent element -->
+                  <img src="../javapro/data conversion/d" alt="prog1" width="1000px" height="300px ">
+                </span>
+
+                <p> QUESTION10:How to convert Date to String </p>
+                <pre>
+                   
+         PROGRAM:
+         import java.util.Date;
+    import java.text.SimpleDateFormat;
+    class DateToString{
+    public static void main(String a[])
+    {
+    Date date=new Date();
+    System.out.println(date);
+    SimpleDateFormat s=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    String str=s.format(date);
+    System.out.println(str);
+    }
+    }
+                </pre>
+    
+                <p>OUTPUT:</p>
+                
+                
+                <span class="img-container"> <!-- Inline parent element -->
+                    <img src="../javapro/data conversion/dc10.png" alt="prog1" width="1000px" height="300px ">
+                  </span>
+
+                  <p> QUESTION11:How to convert String to char </p>
+                  <pre>
+                     
+           PROGRAM:
+ // Data conversion:- 11. How to convert string to Char.
+
+      import java.util.*;
+
+      class STC{
+       public static void main(String args[]){
+   
+          String str="Aryan";
+  
+          char [] chr= new char[str.length()];
+     
+          for(int i=0;i<str.length();i++){
+             chr[i]=str.charAt(i);
+   
+      }
+      for (char c : chr){
+       System.out.println(c);
+      }
+      }
+      }
+    </pre>
+    </pre>
+      
+                  <p>OUTPUT:</p>
+                  
+                  
+                  <span class="img-container"> <!-- Inline parent element -->
+                      <img src="../javapro/data conversion/dc11.png" alt="prog1" width="1000px" height="300px ">
+                    </span>
+
+                    <p> QUESTION12: How to convert char to String </p>
+                    <pre>
+                       
+             PROGRAM:
+      // Data conversion:- 12. How to convert Char to String.     
+
+      import java.io.*;
+      import java.util.*;
+
+      class CTS{
+       public static void main(String args[]){
+   
+    char d='A';
+  
+    String str=Character.toString(d);
+      System.out.println("Char is converted to string:- "+str);
+      }
+      }
+                    </pre>
+        
+                    <p>OUTPUT:</p>
+                    
+                    
+                    <span class="img-container"> <!-- Inline parent element -->
+                        <img src="../javapro/data conversion/dc12.png" alt="prog1" width="1000px" height="300px ">
+                      </span>
+                      <p> QUESTION13: How to convert String to Object </p>
+                      <pre>
+                         
+               PROGRAM:
+     class prog13{
+      public static void main(String[] args) {
+          // Convert String to Integer
+          String intStr = "123";
+          int intValue = Integer.parseInt(intStr);
+          System.out.println("Converted Integer: " + intValue);
+
+         // Convert String to Double
+         String doubleStr = "3.14";
+         double doubleValue = Double.parseDouble(doubleStr);
+         System.out.println("Converted Double: " + doubleValue);
+            
+        // Convert String to Boolean
+        String boolStr = "true";
+        boolean boolValue = Boolean.parseBoolean(boolStr);
+           System.out.println("Converted Boolean: " + boolValue);
+            
+           // Convert String to Custom Object (using Constructor)
+           String customStr = "Hello, World!";
+          CustomObject customObject = new CustomObject(customStr);
+          System.out.println("Converted Custom Object: " +
+           customObject.getD());
+     }
+            
+    // Example Custom Object
+     static class CustomObject {
+           private String data;
+            
+          public CustomObject(String data) {
+              this.data = data;
+                    }
+            
+         public String getData() {
+                        return data;
+         }
+                }
+            }
+            
+                      </pre>
+          
+                      <p>OUTPUT:</p>
+                      
+                      
+                      <span class="img-container"> <!-- Inline parent element -->
+                          <img src="../javapro/data conversion/dc13.png" alt="prog1" width="1000px" height="300px ">
+                      </span>
+                      <p> QUESTION14:How to convert Object to String </p>
+                      <pre>
+                         
+               PROGRAM:
+               //Program no. : data conversion 14
+   //Program name : How to convert Object to String
+
+    class dConversion{
+
+    public static void main(String[] args) {
+        Object obj = new Integer(100);
+        String s = String.valueOf(obj);
+
+        System.out.println(s);
+
+
+      
+        if(s instanceof String){
+            System.out.println("It is string type...");
+        }
+
+    }
+   }
+                      </pre>
+          
+                      <p>OUTPUT:</p>
+                      
+                      
+                      <span class="img-container"> <!-- Inline parent element -->
+                          <img src="../javapro/data conversion/dc14.png" alt="prog1" width="1000px" height="300px ">
+                        </span>
+
+ <p> QUESTION15: How to convert int to long </p>
+  <pre>
+                           
+ PROGRAM:
+                 
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION16: How to convert long to int </p>
+  <pre>
+                           
+ PROGRAM:
+                 
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION17: How to convert int to double </p>
+  <pre>
+                           
+ PROGRAM:
+ class Conversion {
+    public static void main(String[] args) {
+        int x = 10;              
+        double y = x;  
+
+        System.out.println("Original int value: " + x);
+        System.out.println("Converted double value: " + y);
+        double square = y * y;
+        System.out.println("Square of the converted double 
+        value: " + square);
+    }
+}
+                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc17.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION18: How to convert double to int </p>
+  <pre>
+                           
+ PROGRAM:
+ 
+import java.util.Scanner;
+
+class DoubleToInt
+{
+    public static void main(String args[])
+    {
+ System.out.println("\n How to Convert Double To Int.\n");
+      System.out.print(" Enter a double value one  : ");
+      Scanner sc=new Scanner(System.in);
+      double num1 = sc.nextDouble();
+      System.out.print(" Enter a double value Two : ");
+      double num2 = sc.nextDouble();
+
+      int value1 =(int)num1;
+      int value2=(int)num2;
+
+      System.out.println("\n Convert Double value To 
+      Integer value is  : "+value1);
+      System.out.println(" Convert Double value To 
+      Integer value is  : "+value2);
+    }
+}                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION19:How to convert char to int </p>
+  <pre>
+                           
+ PROGRAM:
+ 
+//How to convert char to int
+class chartoint
+{
+        public static void main(String a[])
+        {
+                 char myChar = 'A'; 
+                 int myInt = myChar;
+
+           System.out.println("Character value: "+ myChar);
+           System.out.println();
+           System.out.println("Value after convert to Int: "+ myInt);
+
+        }
+}                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc19.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION20:How to convert int to char </p>
+  <pre>
+                           
+ PROGRAM:
+ 
+// Using Concept of Type-casting 
+import java.util.*; 
+
+class A { 
+
+	public static void main(String[] args) 
+	{ 
+
+		
+		int i = 97; 
+
+		// Type casting character to integer 
+		char ch = (char)i; 
+
+		System.out.println(ch); 
+	} 
+}
+                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc20.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION21: How to convert String to boolean </p>
+  <pre>
+                           
+ PROGRAM:
+ 
+import java.util.Scanner;
+
+class convertStringToBoolean
+{
+    public static void main(String args[])
+    {
+  System.out.println("\n How to convert String To Boolean.");
+        Scanner sc= new Scanner(System.in);
+        System.out.println(" ");
+        System.out.print(" Enter the String1 = ");
+        String str1 = sc.nextLine();
+        System.out.print(" Enter the String2 = ");
+        String str2 = sc.nextLine();
+        System.out.print(" Enter the String3 = ");
+        String str3 = sc.nextLine();
+        
+        boolean b1 = Boolean.valueOf(str1); 
+        boolean b2 = Boolean.valueOf(str2);
+        boolean b3 = Boolean.valueOf(str3);
+
+        System.out.println("");
+        System.out.println(" The convert String To Boolean
+         Value is : "+b1);
+        System.out.println(" The convert String To Boolean
+         Value is : "+b2);
+        System.out.println(" The convert String To Boolean 
+        Value is : "+b3);
+        
+        
+    }
+}                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc21.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+
+  <p> QUESTION22: How to convert boolean to String </p>
+  <pre>
+                           
+ PROGRAM:
+ import java.util.Scanner;
+
+class booleantostring {
+    public static void main(String[] a) {
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Enter a boolean value (true or false): ");
+        String booleanInput = s.nextLine();
+
+        boolean booleanValue = Boolean.parseBoolean(booleanInput);
+        String stringResult = booleanToString(booleanValue);
+
+        System.out.println("String equivalent: " + stringResult);
+    }
+
+    private static String booleanToString(boolean booleanValue) {
+        return String.valueOf(booleanValue);
+    }
+}
+
+                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc22.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+
+  <p> QUESTION23:How to convert Date to Timestamp </p>
+  <pre>
+                           
+ PROGRAM:
+ import java.sql.Timestamp;
+import java.util.Date;
+
+class DateToTimestampExample {
+    public static void main(String[] args) {
+        // Create a Date object
+        Date date = new Date();
+
+        // Convert the Date to a Timestamp
+        Timestamp timestamp = new Timestamp(date.getTime());
+
+        System.out.println("Date: " + date);
+        System.out.println("Timestamp: " + timestamp);
+    }
+}
+                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc23.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION24: How to convert Timestamp to Date </p>
+  <pre>
+                           
+ PROGRAM:
+                 
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION25:How to convert Binary to Decimal </p>
+  <pre>
+                           
+ PROGRAM:
+ import java.util.Scanner;
+
+class binarytodecimal {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a binary number: ");
+        String binaryInput = scanner.nextLine();
+
+        if (!isValidBinary(binaryInput)) {
+            System.out.println("Invalid binary number. 
+            Please enter a valid binary number.");
+            return;
+        }
+
+        int decimalResult = binaryToDecimal(binaryInput);
+        System.out.println("Decimal equivalent: " + decimalResult);
+    }
+
+    private static boolean isValidBinary(String binaryInput) {
+        return binaryInput.matches("[01]+");
+    }
+
+    private static int binaryToDecimal(String binaryInput) {
+        int decimalResult = 0;
+        int binaryLength = binaryInput.length();
+
+        for (int i = binaryLength - 1; i >= 0; i--) {
+            int digit = binaryInput.charAt(i) - '0';
+     decimalResult += digit * Math.pow(2, binaryLength - 1 - i);
+        }
+
+        return decimalResult;
+    }
+}
+
+                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc25.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION26:How to convert Decimal to Binary </p>
+  <pre>
+                           
+ PROGRAM:
+ 
+//How to convert Decimal to Binary
+
+
+
+class DecimalToBinary {
+   public static void main(String[] args) {
+       int decimalNumber =9;
+       
+      
+       StringBuilder binary = new StringBuilder();
+       
+       if (decimalNumber == 0) {
+           binary.append(0);
+       } else {
+           
+           while (decimalNumber > 0) {
+               int remainder = decimalNumber % 2;
+               binary.insert(0, remainder);
+               decimalNumber = decimalNumber / 2;
+           }
+       }
+       
+       System.out.println("Binary representation: "+ 
+       binary.toString());
+   }
+}       
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc26.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION27:How to convert Hex to Decimal </p>
+  <pre>
+                           
+ PROGRAM:
+ 
+import java.util.Scanner;
+
+class ` 
+{
+   public static void main(String args[]) 
+   { 
+
+      System.out.println("\n How to convert Hex to Decimal.\n");
+      Scanner sc=new Scanner(System.in);
+      System.out.print(" Enter a Hex Value one  : ");
+      String Hex1 = sc.nextLine();
+
+      System.out.print(" Enter a Hex Value two  : ");
+      String Hex2 = sc.nextLine();
+
+      int dec1 = Integer.parseInt(Hex1, 16);
+      int dec2 = Integer.parseInt(Hex2, 16);
+
+      System.out.println("\n Convert Hex To Decimal value  is : " + dec1);
+      System.out.println(" Convert Hex To Decimal value is : " + dec2);
+   }
+}                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc27.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION28:How to convert Decimal to Hex </p>
+  <pre>
+                           
+ PROGRAM:
+                 
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION29:How to convert Octal to Decimal </p>
+  <pre>
+                           
+ PROGRAM:
+ class GFG {
+ 
+    public static void main(String args[])
+    {
+        
+        String onum = "157";
+ 
+        
+        int num = Integer.parseInt(onum, 8);
+ 
+        System.out.println(
+            "Decimal equivalent of Octal value 157 is: "
+            + num);
+    }
+}                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/7098dc29.png" alt="prog1" width="1000px" height="300px ">
+  </span>
+  
+  <p> QUESTION30:How to convert Decimal to Octal </p>
+  <pre>
+                           
+ PROGRAM:
+ import java.util.Scanner;
+class DecimalToOctal
+{
+  public static void main(String args[])
+  {
+    Scanner input = new Scanner( System.in );
+    System.out.print("Enter a decimal number : ");
+    int num =input.nextInt();
+ 
+    String octalString = Integer.toOctalString(num);
+    System.out.println("Method 1: Decimal to octal: " + octalString);
+
+  }
+}
+                
+  </pre>
+            
+ <p>OUTPUT:</p>
+                        
+                        
+ <span class="img-container"> <!-- Inline parent element -->
+      <img src="../javapro/data conversion/dc30.png" alt="prog1" width="1000px" height="300px ">
+  </span>      
+            </body>
+            </html>
+           

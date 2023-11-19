@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+</head>
+<style>
+   
+h1{
+       text-align: center;
+       font-weight: lighter;
+       font-size: 60px;
+       color: white;
+       margin: 0;
+       padding-left: 10px;
+           }
+           p{
+               padding-left: 5px;
+               font-size: 30px;
+               font-weight: lighter;
+               color: white;
+               margin: 0;
+       
+           }
+          
+           b{
+               font-weight: lighter;
+               font-size: 25px;
+               color:white;
+               margin: 0;
+               padding-left: 10px;
+           }
+           *{
+   
+      margin: 0;
+     
+      padding: 0;
+     
+      box-sizing: border-box;
+     
+     }
+     
+     
+     
+     .dropdown{
+     
+         margin: 0 auto;
+         background: rgb(17,16,16);
+background: radial-gradient(circle, rgba(17,16,16,1) 7%, rgba(11,113,232,1) 100%);
+         background-position: center center;
+         -webkit-background-size: cover ;
+         background-size: cover;
+         background-attachment: fixed;
+         
+         /* position: fixed; */
+     
+     }
+     
+     nav{
+     
+         height: 65px;
+     
+         background-color:#0a9395 ;
+     
+         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+         text-align:justify;
+         font-size: 30px;
+        
+     }
+     
+     .logo{
+      width: 4rem;
+      float: left;
+      margin-top:2em ;
+      clip-path: circle(45.4% at 50% 50%);
+        
+         width: 70px;
+     
+         display: inline;
+     
+         margin-top: -5px;
+     
+         margin-left: 10px;
+        
+     }
+     
+     nav ul{
+     
+         padding: 0;
+     
+         margin: 0;
+     
+         float: right;
+     
+         margin-right: 25px;
+     
+     }
+     
+     nav ul li{
+      background:#0a9395  ;
+         
+     
+         position: relative;
+     
+         list-style: none;
+     
+         display: inline-block;
+     
+     }
+     
+     nav ul li a{
+     
+         display: flex;
+     
+         padding: 0 15px;
+     
+         color:black;
+     
+         text-decoration: none;
+     
+         line-height: 65px;
+     
+         font-size: 25px;
+     
+         justify-content: space-between;
+     
+         align-items: center;
+     
+         text-align: center;
+     
+     }
+     
+     nav ul li a:hover{
+     
+         background:#0c5454;
+     
+     }
+     
+     nav ul ul{
+     
+         position: absolute;
+     
+         top: 60px;
+     
+         display: none;
+     
+     }
+     
+     nav ul li:hover > ul{
+     
+         display: block;
+     
+     }
+     
+     nav ul ul li{
+     
+         width:150px;
+     
+         float: none;
+     
+         display: list-item;
+     
+         position: relative;
+     
+     }
+     p {
+        margin-top: 50px;
+        text-align: center;
+        font: size 30px;
+        color: yellow
+     }
+        pre
+         {
+            background-color: beige;
+            color: #000000;
+            font-size: 25px ;
+            margin: 250px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+          
+            border-radius: 25px;
+         }
+
+         .img-container {
+        text-align: center;
+        display: block;
+      }
+    
+    </style>
+    <body>
+    
+       <div class="dropdown">
+           <nav>
+               <img src="../images/main0.jpg" class="logo"><a>ASCODERS</a>
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                   <li><a href="#">Tutorial</a>
+                       <ul>
+                           <li><a href="../HTML.html">HTML</a></li>
+                           <li><a href="../CSS.html">CSS</a></li>
+                           <li><a href="../Java Script.html">Java Script</a></li>
+                            <li><a href="../dbms.html">DBMS</a></li>
+                           <li><a href="../sql.html">SQL</a></li>
+                           <li><a href="../plsql.html">PL/SQL</a></li>
+                           <li><a href="../java.html">JAVA</a></li>
+                           <li><a href="../php.html">PHP</a></li>
+                           
+                       </ul>
+                   </li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Contact Us</a></li>
+               </ul>
+           </nav><br>
+ <h1>CORE JAVA PROGRAMMING: Practice Problems</h1>
+ <p> QUESTION1:Enter the character from user using InputStreamReader</p>
+ <pre>
+  PROGRAM:             
+  //Enter the character from user using InputStreamReader
+
+  import java.io.*;  
+  class InputStreamReaderP{  
+  public static void main(String args[])throws Exception{  
+    
+  InputStreamReader r=new InputStreamReader(System.in);  
+  BufferedReader br=new BufferedReader(r);  
+    
+  System.out.println("Enter your name");  
+  String name=br.readLine();  
+  System.out.println("Welcome "+name);  
+   }  
+  }      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7011inputoutput1.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION2: Enter the string from user using BufferedStreamReader</p>
+ <pre>
+  PROGRAM:             
+  import java.io.*;
+
+  class Buffered_Stream
+  {
+public static void main ( String s[] ) throws IOException
+    {
+System.out.print ( "Enter the string: " );
+  
+BufferedReader input = new BufferedReader
+ ( new InputStreamReader ( System.in ) );
+  
+ String inputString = input.readLine();
+  
+    
+System.out.println ( "Entered string is: " + inputString );
+    }
+  }    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7083Inputoutput2.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION3: Enter the integer from user using Scanner class</p>
+ <pre>
+  PROGRAM:             
+  //Enter the integer from the user using Scanner class
+  import java.util.Scanner;
+  class A{
+      public static void main(String arg[])
+      {
+          Scanner s = new Scanner(System.in);
+          System.out.println("Enter an integer :-");
+          int a = s.nextInt();
+          System.out.println(a);
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7077InputOutput3.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION4:Enter the float from user using Scanner class</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+  class FloatInputExample {
+      public static void main(String[] args) {
+          // Create a Scanner object to read user input
+          Scanner scanner = new Scanner(System.in);
+  
+          System.out.print("Enter a float number: ");
+  // Check if the next token entered by the user is a float
+          if (scanner.hasNextFloat()) {
+              float userInput = scanner.nextFloat();
+     System.out.println("You entered: " + userInput);
+          } else {
+  System.out.println("Invalid input. Please enter a
+   valid float number.");
+          }
+  
+          // Close the Scanner to release resources
+          scanner.close();
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7006inputoutput4.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION5:Enter the double from user using Scanner class</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;
+
+  class prog5 {
+     public static void main(String[] args) {
+ // Create a Scanner object to read input from the console
+         Scanner scanner = new Scanner(System.in);
+ 
+         // Prompt the user to enter a double
+         System.out.print("Enter a double: ");
+ 
+         // Check if the next input is a double
+         if (scanner.hasNextDouble()) {
+    // Read the double from the user
+    double userInput = scanner.nextDouble();
+ 
+    // Display the entered double
+ System.out.println("You entered: " + userInput);
+ 
+ // Check if the entered double is positive, negative, or zero
+ if (userInput > 0) {
+     System.out.println("The entered double is positive.");
+ } else if (userInput < 0) {
+     System.out.println("The entered double is negative.");
+ } else {
+     System.out.println("The entered double is zero.");
+  }
+} else {
+ // If the input is not a double, display an error message
+ System.out.println("Invalid input. Please enter a
+  valid double.");
+         }
+ 
+         // Close the scanner
+         scanner.close();
+     }
+ }      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7021inputoutput5.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION6:Enter the boolean from user using Scanner class</p>
+ <pre>
+  PROGRAM:             
+  import java.util.*;  
+  class Boolean {    
+      public static void main(String[] args) {         
+   System.out.print("Are you above 18?- ");  
+    Scanner sc = new Scanner(System.in);  
+    boolean bn = sc.nextBoolean();  
+     if (bn == true) {  
+  System.out.println("You are over 18");  
+      } else if (bn == false) {  
+    System.out.println("You are under 18");  
+             }  
+             sc.close();                      
+       }  
+  }      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7050Inputoutput6.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION7:Enter the short integer from user using Scanner class</p>
+ <pre>
+  PROGRAM:             
+  import java.util.Scanner;  
+  class a  
+  {  
+  public static void main(String[] x)   
+  {  
+ //object of the Scanner class  
+ Scanner s=new Scanner(System.in);  
+ System.out.print("Enter a short integer value: ");  
+//invoking nextShort() method that reads an 
+integer input by keyboard  
+ //storing the input number in a variable num  
+int num = s.nextShort();  
+ System.out.println("The Short integer entered by 
+ the user is: "+num);  
+  }  
+  }       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7039input_output7.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION8: Enter the long integer from user using Scanner class</p>
+ <pre>
+  PROGRAM:             
+
+  import java.util.Scanner;
+  //Enter the long integer from user using Scanner class
+  class LongUsingScanner 
+  {
+      public static void main(String[] args) 
+      {
+  Scanner sc = new Scanner(System.in);
+ System.out.println("Enter a long integer : ");
+          long l = sc.nextLong();
+          System.out.println("long integer is : "+l);
+          
+      }
+  
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7011inputoutput8.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION9:Get all characters from the file and display on the screen</p>
+ <pre>
+  PROGRAM:             
+  import java.io.BufferedReader;
+  import java.io.FileReader;
+  import java.io.IOException;
+  
+   class prog9 {
+      public static void main(String[] args) {
+ 
+String filePath = "abc.txt";
+  
+          try{
+  
+BufferedReader reader = new BufferedReader(new FileReader
+(filePath));
+              int character;
+              
+// Read and display each character until the end of the file
+ while ((character = reader.read()) != -1) {
+   System.out.print((char) character);
+              }
+ } catch (IOException e) {
+ System.out.println("Error reading the file: "
+  + e.getMessage());
+              e.printStackTrace();
+          }
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7089InputOutput9.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION10:Get all characters from the file, count number of lines, words, characters and display on the screen</p>
+ <pre>
+  PROGRAM:             
+  import java.io.BufferedReader;
+  import java.io.FileReader;
+  import java.io.IOException;
+  
+   class prog10 {
+      public static void main(String[] args)
+        throws ClassNotFoundException{
+          String filePath = "abc.txt"; 
+  
+          try{ 
+ BufferedReader reader = new BufferedReader
+ (new FileReader(filePath));
+ int character;
+ int lineCount = 0;
+int wordCount = 0;
+int charCount = 0;
+ boolean inWord = false;
+  
+ while ((character = reader.read()) != -1) {
+     charCount++;
+  
+    // Count lines
+     if (character == '\n') {
+        lineCount++;
+     }
+  
+     // Count words
+     if (Character.isWhitespace(character)) {
+         inWord = false;
+  } else if (!inWord) {
+      inWord = true;
+       wordCount++;
+                  }
+              }
+  
+ // Display statistics
+ System.out.println("Number of lines: " + lineCount);
+ System.out.println("Number of words: " + wordCount);
+ System.out.println("Number of characters: " + charCount);
+  
+          } catch (IOException e) {
+              e.printStackTrace();
+          }
+      }
+  }    
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Input output/7089InputOutput10.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+
+           
+              
+            </body>
+            </html>
+           

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website</title>
+</head>
+<style>
+   
+h1{
+       text-align: center;
+       font-weight: lighter;
+       font-size: 60px;
+       color: white;
+       margin: 0;
+       padding-left: 10px;
+           }
+           p{
+               padding-left: 5px;
+               font-size: 30px;
+               font-weight: lighter;
+               color: white;
+               margin: 0;
+       
+           }
+          
+           b{
+               font-weight: lighter;
+               font-size: 25px;
+               color:white;
+               margin: 0;
+               padding-left: 10px;
+           }
+           *{
+   
+      margin: 0;
+     
+      padding: 0;
+     
+      box-sizing: border-box;
+     
+     }
+     
+     
+     
+     .dropdown{
+     
+         margin: 0 auto;
+         background: rgb(17,16,16);
+background: radial-gradient(circle, rgba(17,16,16,1) 7%, rgba(11,113,232,1) 100%);
+         background-position: center center;
+         -webkit-background-size: cover ;
+         background-size: cover;
+         background-attachment: fixed;
+         
+         /* position: fixed; */
+     
+     }
+     
+     nav{
+     
+         height: 65px;
+     
+         background-color:#0a9395 ;
+     
+         box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+         text-align:justify;
+         font-size: 30px;
+        
+     }
+     
+     .logo{
+      width: 4rem;
+      float: left;
+      margin-top:2em ;
+      clip-path: circle(45.4% at 50% 50%);
+        
+         width: 70px;
+     
+         display: inline;
+     
+         margin-top: -5px;
+     
+         margin-left: 10px;
+        
+     }
+     
+     nav ul{
+     
+         padding: 0;
+     
+         margin: 0;
+     
+         float: right;
+     
+         margin-right: 25px;
+     
+     }
+     
+     nav ul li{
+      background:#0a9395  ;
+         
+     
+         position: relative;
+     
+         list-style: none;
+     
+         display: inline-block;
+     
+     }
+     
+     nav ul li a{
+     
+         display: flex;
+     
+         padding: 0 15px;
+     
+         color:black;
+     
+         text-decoration: none;
+     
+         line-height: 65px;
+     
+         font-size: 25px;
+     
+         justify-content: space-between;
+     
+         align-items: center;
+     
+         text-align: center;
+     
+     }
+     
+     nav ul li a:hover{
+     
+         background:#0c5454;
+     
+     }
+     
+     nav ul ul{
+     
+         position: absolute;
+     
+         top: 60px;
+     
+         display: none;
+     
+     }
+     
+     nav ul li:hover > ul{
+     
+         display: block;
+     
+     }
+     
+     nav ul ul li{
+     
+         width:150px;
+     
+         float: none;
+     
+         display: list-item;
+     
+         position: relative;
+     
+     }
+     p {
+        margin-top: 50px;
+        text-align: center;
+        font: size 30px;
+        color: yellow
+     }
+        pre
+         {
+            background-color: beige;
+            color: #000000;
+            font-size: 25px ;
+            margin: 250px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+          
+            border-radius: 25px;
+         }
+
+         .img-container {
+        text-align: center;
+        display: block;
+      }
+    
+    </style>
+    <body>
+    
+       <div class="dropdown">
+           <nav>
+               <img src="../images/main0.jpg" class="logo"><a>ASCODERS</a>
+               <ul>
+                   <li><a href="../index.html">Home</a></li>
+                   <li><a href="#">Tutorial</a>
+                       <ul>
+                           <li><a href="../HTML.html">HTML</a></li>
+                           <li><a href="../CSS.html">CSS</a></li>
+                           <li><a href="../Java Script.html">Java Script</a></li>
+                            <li><a href="../dbms.html">DBMS</a></li>
+                           <li><a href="../sql.html">SQL</a></li>
+                           <li><a href="../plsql.html">PL/SQL</a></li>
+                           <li><a href="../java.html">JAVA</a></li>
+                           <li><a href="../php.html">PHP</a></li>
+                           
+                       </ul>
+                   </li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">Contact Us</a></li>
+               </ul>
+           </nav><br>
+<h1>CORE JAVA PROGRAMMING: Practice Problems</h1>
+<p> QUESTION1:Write a Java program to create a basic Java thread that prints "Hello, World!" when executed.</p>
+ <pre>
+  PROGRAM:             
+  class sampleThread extends Thread{
+    public void run(){
+System.out.println("hello world");
+    }
+}
+
+
+
+public class Multithreading_1{
+  public static void main(String[] args) {
+    sampleThread foo = new sampleThread();
+    foo.run();
+    
+  }
+}     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Multithreading/Multithreading_1.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION2:Write a Java program that creates two threads to find and print even and odd numbers from 1 to 20.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION3: Write a Java program that sorts an array of integers using multiple threads.</p>
+ <pre>
+  PROGRAM:             
+  
+  import java.util.Arrays;
+  
+  class ParallelMergeSort {
+  
+      private final int[] array;
+  
+      private ParallelMergeSort(int[] array) {
+          this.array = array;
+      }
+  
+      private void merge(int low, int mid, int high) {
+ int[] left = Arrays.copyOfRange(array, low, mid + 1);
+ int[] right = Arrays.copyOfRange(array, mid + 1, high + 1);
+  
+          int i = 0, j = 0, k = low;
+  while (i < left.length && j < right.length) {
+              if (left[i] <= right[j]) {
+                  array[k++] = left[i++];
+              } else {
+                  array[k++] = right[j++];
+              }
+          }
+  
+          while (i < left.length) {
+              array[k++] = left[i++];
+          }
+  
+          while (j < right.length) {
+              array[k++] = right[j++];
+          }
+      }
+  
+      private void mergeSort(int low, int high) {
+          if (low < high) {
+              int mid = (low + high) / 2;
+  
+Thread leftThread = new Thread(() -> mergeSort(low, mid));
+Thread rightThread = new Thread(() -> mergeSort(mid + 1, high));
+  
+              leftThread.start();
+              rightThread.start();
+  
+              try {
+                  leftThread.join();
+                  rightThread.join();
+              } catch (InterruptedException e) {
+                  e.printStackTrace();
+              }
+  
+              merge(low, mid, high);
+          }
+      }
+  
+private static void parallelMergeSort(int[] array) {
+ParallelMergeSort sorter = new ParallelMergeSort(array);
+          sorter.mergeSort(0, array.length - 1);
+      }
+  
+      public static void main(String[] args) {
+int[] arr = {12, 4, 7, 3, 9, 5, 2, 1, 6, 11, 8, 10};
+  System.out.println("Array before sorting: " + 
+  Arrays.toString(arr));
+          
+          parallelMergeSort(arr);
+   System.out.println("Array after sorting: " +
+    Arrays.toString(arr));
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Multithreading/7007Multithreading3.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION4:Write a Java program that performs matrix multiplication using multiple threads.
+
+</p>
+ <pre>
+  PROGRAM:             
+  import java.util.concurrent.ExecutorService;
+  import java.util.concurrent.Executors;
+  import java.util.concurrent.TimeUnit;
+  
+  public class MatrixMultiplication {
+  
+      private static final int MATRIX_SIZE = 3; 
+      private static final int NUM_THREADS = 3; 
+ private static int[][] resultMatrix = new int
+ [MATRIX_SIZE][MATRIX_SIZE];
+private static int[][] matrixA = new int
+[MATRIX_SIZE][MATRIX_SIZE];
+private static int[][] matrixB = new int
+[MATRIX_SIZE][MATRIX_SIZE];
+  
+      public static void main(String[] args) {
+          initializeMatrix(matrixA);
+          initializeMatrix(matrixB);
+  
+          System.out.println("Matrix A:");
+          printMatrix(matrixA);
+  
+          System.out.println("\nMatrix B:");
+          printMatrix(matrixB);
+  
+ExecutorService executor = Executors.newFixedThreadPool
+(NUM_THREADS);
+  
+          for (int i = 0; i < MATRIX_SIZE; i++) {
+              executor.execute(new MatrixMultiplier(i));
+          }
+  
+          executor.shutdown();
+  
+          try {
+executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
+          } catch (InterruptedException e) {
+              e.printStackTrace();
+          }
+  
+          System.out.println("\nResult Matrix:");
+          printMatrix(resultMatrix);
+      }
+  
+      private static void initializeMatrix(int[][] matrix) {
+          for (int i = 0; i < MATRIX_SIZE; i++) {
+              for (int j = 0; j < MATRIX_SIZE; j++) {
+                  matrix[i][j] = (int) (Math.random() * 10);
+              }
+          }
+      }
+  
+      private static void printMatrix(int[][] matrix) {
+          for (int i = 0; i < MATRIX_SIZE; i++) {
+              for (int j = 0; j < MATRIX_SIZE; j++) {
+                  System.out.print(matrix[i][j] + " ");
+              }
+              System.out.println();
+          }
+      }
+  
+private static class MatrixMultiplier 
+implements Runnable {
+          private final int row;
+  
+          public MatrixMultiplier(int row) {
+              this.row = row;
+          }
+  
+          @Override
+          public void run() {
+              for (int col = 0; col < 
+              MATRIX_SIZE; col++) {
+                  for (int k = 0; k <
+                   MATRIX_SIZE; k++) {
+resultMatrix[row][col] += matrixA[row][k] * matrixB[k][col];
+                  }
+              }
+          }
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Multithreading/multithreading_4.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION5: Write a Java program that calculates the sum of all prime numbers up to a given limit using multiple threads.</p>
+ <pre>
+  PROGRAM:             
+  
+      private int start, end;
+      private int sum = 0;
+  
+      MyThread(int start, int end) {
+          this.start = start;
+          this.end = end;
+      }
+  
+      public void run() {
+ System.out.println("My thread is running");
+          for (int i = start; i <= end; i++) {
+              if (isPrime(i))
+                  sum += i;
+          }
+      }
+  
+      boolean isPrime(int n) {
+          if (n == 0 || n == 1)
+              return false;
+ for (int i = 2; i <= Math.sqrt(n); ++i) {
+              if (n % i == 0)
+                  return false;
+          }
+          return true;
+      }
+  
+      public int getSum() {
+          return sum;
+      }
+  }
+  
+  class SumOfPrimes {
+      MyThread[] myThreads;
+      private int sum = 0;
+      private int limit = 20;
+      private static int threadCount = 4;
+  
+      // Constructor to initialize the array of threads
+ public SumOfPrimes(int n) throws InterruptedException {
+ this.myThreads = new MyThread[n];
+          for (int i = 0; i < n; i++) {
+              int start = ((limit * i) / n);
+int end = (i == n-1) ? limit : ((limit * (i+1))/n) - 1;
+      myThreads[i] = new MyThread(start, end);
+          }
+      }
+  
+      // Function to start all threads
+ public void startAll() throws InterruptedException {
+     for (int i = 0; i < myThreads.length; i++) {
+              myThreads[i].start();
+              myThreads[i].join();
+          }
+      }
+  
+      public void getSum() {
+    for (int i = 0; i < myThreads.length; i++) {
+              this.sum += myThreads[i].getSum();
+          }
+      }
+      
+public static void main(String[] args) {
+          try {
+ SumOfPrimes mt = new SumOfPrimes(threadCount);
+              mt.startAll();
+              mt.getSum();
+System.out.println("Sum of prime numbers is " + mt.sum);
+          } catch (InterruptedException e) {
+              System.err.print("Error: " + e);
+          }
+      }
+  }     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Multithreading/7001Multithreading5.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION6:Write a Java program to implement a concurrent web crawler that crawls multiple websites simultaneously using threads.</p>
+ <pre>
+  PROGRAM:             
+  
+
+  import java.util.Arrays;
+  
+  class ParallelMergeSort {
+  
+      private final int[] array;
+  
+      private ParallelMergeSort(int[] array) {
+          this.array = array;
+      }
+  
+      private void merge(int low, int mid, int high) {
+ int[] left = Arrays.copyOfRange(array, low, mid + 1);
+int[] right = Arrays.copyOfRange(array, mid + 1,
+ high + 1);
+  
+          int i = 0, j = 0, k = low;
+  
+          while (i < left.length && j < right.length) {
+              if (left[i] <= right[j]) {
+                  array[k++] = left[i++];
+              } else {
+                  array[k++] = right[j++];
+              }
+          }
+  
+          while (i < left.length) {
+              array[k++] = left[i++];
+          }
+  
+          while (j < right.length) {
+              array[k++] = right[j++];
+          }
+      }
+  
+      private void mergeSort(int low, int high) {
+          if (low < high) {
+              int mid = (low + high) / 2;
+  
+Thread leftThread = new Thread(() -> mergeSort(low, mid));
+ Thread rightThread = new Thread(() -> mergeSort(mid
+  + 1, high));
+  
+              leftThread.start();
+              rightThread.start();
+  
+              try {
+                  leftThread.join();
+                  rightThread.join();
+              } catch (InterruptedException e) {
+                  e.printStackTrace();
+              }
+  
+              merge(low, mid, high);
+          }
+      }
+  
+ private static void parallelMergeSort(int[] array) {
+ParallelMergeSort sorter = new ParallelMergeSort(array);
+    sorter.mergeSort(0, array.length - 1);
+      }
+  
+      public static void main(String[] args) {
+ int[] arr = {12, 4, 7, 3, 9, 5, 2, 1, 6, 11, 8, 10};
+System.out.println("Array before sorting: " + Arrays.toString(arr));
+          
+    parallelMergeSort(arr);
+  
+System.out.println("Array after sorting: " + Arrays.toString(arr));
+      }
+  }
+      
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Multithreading/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION7:Write a Java program that creates a bank account with concurrent deposits and withdrawals using threads.</p>
+ <pre>
+  PROGRAM:             
+// Java Program to illustrate Multithreading Approach
+
+  class Bank {
+  int total = 100;
+  void withdrawn(String name, int withdrawal){
+  if (total >= withdrawal) {
+ System.out.println(name + " withdrawn "+ withdrawal);
+  total = total - withdrawal;
+  System.out.println(total);
+  try {
+  Thread.sleep(1000);
+  }
+  catch (InterruptedException e) {
+  e.printStackTrace();}}
+  else {
+  
+    System.out.println(name+ " you can not withdraw 
+    "+ withdrawal);
+  System.out.println("your balance is: " + total);
+  try {
+  Thread.sleep(1000);
+  }
+  catch (InterruptedException e) {
+  e.printStackTrace();}
+  }}
+  void deposit(String name, int deposit){
+  System.out.println(name + " deposited " + deposit);
+  total = total + deposit;
+  System.out.println("Balance after deposit: "+ total);
+  try {
+  Thread.sleep(1000);
+  }
+  catch (InterruptedException e) {
+  e.printStackTrace();}
+  }}
+  
+  class ThreadWithdrawal extends Thread {
+  
+      Bank object;
+      String name;
+      int dollar;
+  
+ ThreadWithdrawal(Bank ob, String name, int money)
+      {
+          this.object = ob;
+          this.name = name;
+          this.dollar = money;
+      }
+  
+ public void run() { object.withdrawn(name, dollar); }
+  }
+  
+  class ThreadDeposit extends Thread {
+  
+      Bank object;
+      String name;
+      int dollar;
+ThreadDeposit(Bank ob, String name, int money)
+      {
+          this.object = ob;
+          this.name = name;
+          this.dollar = money;
+      }
+  
+public void run() { object.deposit(name, dollar); }
+  }
+  
+  
+  class main1 {
+  
+      public static void main(String[] args)
+      {
+          
+          Bank obj = new Bank();
+  
+ThreadWithdrawal t1 = new ThreadWithdrawal(obj,
+ "Arnab", 20);
+ThreadWithdrawal t2 = new ThreadWithdrawal(obj,
+ "Mandeep", 40);
+ThreadDeposit t3 = new ThreadDeposit(obj, "Mukta", 35);
+ThreadWithdrawal t4 = new ThreadWithdrawal(obj, 
+"Rinku", 80);
+ThreadWithdrawal t5 = new ThreadWithdrawal(obj, 
+"Shubham", 40);
+  
+          t1.start();
+          t2.start();
+          t3.start();
+          t4.start();
+          t5.start();
+      }
+  }
+       
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Multithreading/mulltithread7.jfif" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION8: Create the program to create multiple threads by using Runnbale interface</p>
+ <pre>
+  PROGRAM:             
+  class prog8 {
+    
+public static void main(String[] args) throws
+ java.lang.ClassNotFoundException {
+
+        Runnable r1 = new MyRun("This is Thread 1");
+        Runnable r2 = new MyRun("This isThread 2");
+        Runnable r3 = new MyRun("This isThread 3");
+
+        Thread t1 = new Thread(r1);
+        Thread t2 = new Thread(r2);
+        Thread t3 = new Thread(r3);
+
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+
+    @Override
+    public String toString() {
+        return "prog1 []";
+    }
+}
+
+class MyRun implements Runnable {
+    private String tn;
+
+public MyRun(String name) {
+        this.tn = name;
+    }
+
+    @Override
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+ System.out.println(tn + " - Count is start: " + i);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+ System.out.println(tn + " now running  has finished.");
+    }
+}
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Multithreading/Multithread7104prog8.png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION9:Create the program to create multiple threads by using Thread class</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION10:Create the program to create multiple threads, set its name and its priority.</p>
+ <pre>
+  PROGRAM:             
+  class MyThread extends Thread {
+    public MyThread(String name, int priority) {
+        super(name);
+        setPriority(priority);
+    }
+
+    public void run() {
+        System.out.println("Thread: " + getName() +
+         ", Priority: " + getPriority() + " is running.");
+    }
+}
+
+public class ThreadExample {
+    public static void main(String[] args) {
+ MyThread thread1 = new MyThread("Thread1", 
+ Thread.MAX_PRIORITY);
+ MyThread thread2 = new MyThread("Thread2", 
+ Thread.NORM_PRIORITY);
+MyThread thread3 = new MyThread("Thread3", 
+Thread.MIN_PRIORITY);
+
+        thread1.start();
+        thread2.start();
+        thread3.start();
+    }
+}
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Multithreading/multithreading_10(7031_21).png" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION11:Create the program to create multiple threads, show an example of synchronization keyword.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION12:Create the program to create multiple threads, show an example of notify, notifyall, wait, resume, sleep methods.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+<p> QUESTION13: Create the program to create multiple threads, show an example of join and yield methods.</p>
+ <pre>
+  PROGRAM:             
+     
+</pre>
+
+ <p>OUTPUT:</p>
+            
+            
+ <span class="img-container"> <!-- Inline parent element -->
+ <img src="../javapro/Single-Dimension-Array/" alt="prog1" width="1000px"height="300px">
+</span>
+
+      
+  
+              
+            </body>
+            </html>
+           
